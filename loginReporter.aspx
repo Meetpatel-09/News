@@ -12,7 +12,7 @@
                         <div class="page-wrapper">
 							<div class="row">
                                 <div class="col-lg-12">
-                                    <form class="form-wrapper" runat="server">
+                                   
 										<div class="justify-content-md-center">
                                     		<h4 style="text-align: center"> Reporter Sign In</h4>
 										</div>
@@ -24,7 +24,7 @@
                                         <div class="justify-content-md-center" style="text-align: center">
                                             <asp:Button ID="blogin" CssClass="btn btn-primary" runat="server" Text="Sign In" onclick="blogin_Click" />
 										</div>
-                                    </form>
+                                    
                                 </div>
                             </div>				
                         </div><!-- end page-wrapper -->

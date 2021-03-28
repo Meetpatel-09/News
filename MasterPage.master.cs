@@ -12,11 +12,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
         if(Session["title"] != null)
         {
             ltitle.Text = Session["title"].ToString();
-            
-           // if(Session["title"].ToString() == "")
-          //  {
-            //
-         //   }
         }
         
     }

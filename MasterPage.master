@@ -51,7 +51,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-
+    <form class="form-wrapper" runat="server">
      <!-- LOADER -->
     <div id="preloader">
         <img class="preloader" src="images/loader.gif" alt="">
@@ -119,12 +119,12 @@
                             <li class="nav-item dropdown has-submenu">
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown02">
-                                    <li><a class="dropdown-item" href="blog-author.html">Blog Author</a></li>
-                                    <li><a class="dropdown-item" href="page-contact.html">Contact Page</a></li>
-                                    <li><a class="dropdown-item" href="page.html">Default Page</a></li>
-                                    <li><a class="dropdown-item" href="page-fullwidth.html">Fullwidth Page</a></li>
-                                    <li><a class="dropdown-item" href="page-404.html">Not Found Page</a></li>
-                                    <li><a class="dropdown-item" href="page-sitemap.html">Sitemap & Archives</a></li>
+                                    <li><asp:LinkButton ID="LinkButton1" runat="server"> <asp:Label ID="Label1" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton2" runat="server"> <asp:Label ID="Label2" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton3" runat="server"> <asp:Label ID="Label3" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton4" runat="server"> <asp:Label ID="Label4" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton5" runat="server"> <asp:Label ID="Label5" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton6" runat="server"> <asp:Label ID="Label6" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -212,6 +212,6 @@
     <script src="js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
-
+    </form>
 </body>
 </html>

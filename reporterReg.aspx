@@ -19,7 +19,7 @@
                     <div class="page-wrapper">
 					    <div class="row">
                             <div class="col-lg-12">
-                                <form class="form-wrapper" id="form1" runat="server">
+                               
                                     <div class="justify-content-md-center">
                                     	<h2 style="text-align: center"> Reporter Sign Up form</h2>
 									</div>
@@ -59,7 +59,7 @@
                                     <div class="justify-content-md-center" style="text-align: center">
                                         <asp:Button ID="bsubmit" runat="server" CssClass="btn btn-primary" OnClick="bsubmit_Click" Text="Submit" />
                                     </div>
-                                </form>
+                               
                             </div>
                         </div>				
                     </div><!-- end page-wrapper -->

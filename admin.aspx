@@ -12,7 +12,7 @@
                     <div class="page-wrapper">
 						<div class="row">
                             <div class="col-lg-12">
-								<form runat="server">
+								
 								<h1 style="text-align: center">Manage</h1>
 								<br />
 								<div class="container">
@@ -44,7 +44,7 @@
 								<div align="center">
                                     <asp:Button ID="btlogout" runat="server" class="btn btn-primary" style="text-align: center" Text="Sign Out" onclick="btlogout_Click" />
 								</div>
-								</form>
+							
 							</div>
                         </div>				
                     </div><!-- end page-wrapper -->

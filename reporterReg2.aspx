@@ -20,11 +20,11 @@
 								<h4 style="color: blue; text-align: center"><asp:Label ID="lrid" runat="server"></asp:Label></h4>
 									
 								<p style="text-align: center">the above id and your password.</p>
-                                <form id="form1" runat="server">
+                                
 								    <div class="justify-content-md-center" style="text-align: center">
                                         <asp:Button ID="bt_home" class="btn btn-success" runat="server" Text="Go To Home Page" onclick="bt_home_Click" />
 								    </div>
-                                </form>
+                                
                             </div>
                         </div>				
                     </div><!-- end page-wrapper -->
