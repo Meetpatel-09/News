@@ -10,7 +10,7 @@ public partial class reporterReg : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Session["title"] = "Reporter Sign Up"; 
+        Session["title"] = "Reporter Sign Up";
         btprofilephoto.Attributes.Add("onclick", "document.getElementById('" + FileUpload1.ClientID + "').click(); return false;");
         btresume.Attributes.Add("onclick", "document.getElementById('" + FileUpload2.ClientID + "').click(); return false;");
     }
@@ -34,13 +34,13 @@ public partial class reporterReg : System.Web.UI.Page
                 a = RandomNumber(0, 1000000);
                 string a1 = a.ToString();
                 //image 1 path
-                string spath1 = Server.MapPath("photo1\\" + a1);
+                string spath1 = Server.MapPath("photo1\\" + a1 + FileUpload1.FileName.ToString());
                 FileUpload1.PostedFile.SaveAs(spath1);
-                TextBox2.Text = string.Concat(TextBox1.Text.ToString(), a1);
+                TextBox2.Text = string.Concat(TextBox1.Text.ToString(), a1, FileUpload1.FileName.ToString());
                 //image 2 path
-                string spath2 = Server.MapPath("photo1\\" + a1);
+                string spath2 = Server.MapPath("photo1\\" + a1 + FileUpload2.FileName.ToString());
                 FileUpload2.PostedFile.SaveAs(spath2);
-                TextBox3.Text = string.Concat(TextBox1.Text.ToString(), a1);
+                TextBox3.Text = string.Concat(TextBox1.Text.ToString(), a1, FileUpload2.FileName.ToString());
 
                 Session["email"] = txemail.Text;
 

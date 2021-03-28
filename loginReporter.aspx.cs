@@ -10,6 +10,7 @@ public partial class loginReporter : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Reporter Sign In";
         Session.Clear();
     }
     protected void blogin_Click(object sender, EventArgs e)

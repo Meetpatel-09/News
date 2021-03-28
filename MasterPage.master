@@ -136,7 +136,7 @@
                             <li class="nav-item dropdown has-submenu">
                                 <a class="nav-link dropdown-toggle color-aqua-hover" href="#" id="dropDownSignUp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sing Up</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropDownSignUp">
-                                    <li><a class="dropdown-item" href="#">User</a></li>
+                                    <li><a class="dropdown-item" href="UserReg.aspx">User</a></li>
                                     <li><a class="dropdown-item" href="reporterReg.aspx">Reporter</a></li>
                                 </ul>
                             </li>

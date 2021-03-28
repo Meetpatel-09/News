@@ -10,6 +10,7 @@ public partial class reporterReg2 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Reporter Sign Up";
         if (Session["email"] != null)
         {
             TextBox1.Text = Session["email"].ToString();

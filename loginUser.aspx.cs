@@ -10,6 +10,7 @@ public partial class loginUser : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "User Sing In";
         Session.Clear();
     }
     protected void blogin_Click(object sender, EventArgs e)
