@@ -36,10 +36,10 @@
                                         <asp:ListItem>Female</asp:ListItem>
                                     </asp:DropDownList>
                                     
-                                    &nbsp; E-mail <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txemail" ErrorMessage="Enter email id" ForeColor="Red"></asp:RequiredFieldValidator> &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txemail" ErrorMessage="Invalid emain id" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator> <asp:Label ID="lmsger" runat="server" ForeColor="Red" Visible="False"></asp:Label>
+                                    &nbsp; E-mail <asp:Label ID="lmsger" runat="server" ForeColor="Red" Visible="False"></asp:Label> <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txemail" ErrorMessage="Enter email id" ForeColor="Red"></asp:RequiredFieldValidator> &nbsp;<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txemail" ErrorMessage="Invalid emain id" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                                     <asp:TextBox ID="txemail" CssClass="form-control" placeholder="Email address" runat="server"></asp:TextBox>
                                     
-                                    &nbsp; Mobile Number  <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="txmobile" ErrorMessage="Enter mobile number" ForeColor="Red"></asp:RequiredFieldValidator> &nbsp;<asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txmobile" ErrorMessage="10 digits only" ForeColor="Red" MaximumValue="9999999999" MinimumValue="1111111111" Type="Double"></asp:RangeValidator> <asp:Label ID="lmsger0" runat="server" ForeColor="Red" Visible="False"></asp:Label>
+                                    &nbsp; Mobile Number <asp:Label ID="lmsger0" runat="server" ForeColor="Red" Visible="False"></asp:Label> <asp:RequiredFieldValidator ID="RequiredFieldValidator16" runat="server" ControlToValidate="txmobile" ErrorMessage="Enter mobile number" ForeColor="Red"></asp:RequiredFieldValidator> &nbsp;<asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txmobile" ErrorMessage="10 digits only" ForeColor="Red" MaximumValue="9999999999" MinimumValue="1111111111" Type="Double"></asp:RangeValidator>
                                     <asp:TextBox ID="txmobile" CssClass="form-control" placeholder="Mobile Number" runat="server"></asp:TextBox>
                                     
                                     &nbsp; Password <asp:RequiredFieldValidator ID="RequiredFieldValidator17" runat="server" ControlToValidate="txpwd" ErrorMessage="Enter password" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -57,7 +57,7 @@
                                     <asp:FileUpload ID="FileUpload2" CssClass="form-control" runat="server" style="display: none"/>
                                     
                                     <div class="justify-content-md-center" style="text-align: center">
-                                        <asp:Button ID="bsubmit" runat="server" CssClass="btn btn-primary" Text="Submit" />
+                                        <asp:Button ID="bsubmit" runat="server" CssClass="btn btn-primary" OnClick="bsubmit_Click" Text="Submit" />
                                     </div>
                                 </form>
                             </div>

@@ -9,6 +9,15 @@ public partial class MasterPage : System.Web.UI.MasterPage
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if(Session["title"] != null)
+        {
+            ltitle.Text = Session["title"].ToString();
+            
+           // if(Session["title"].ToString() == "")
+          //  {
+            //
+         //   }
+        }
+        
     }
 }

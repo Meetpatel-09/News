@@ -33,4 +33,24 @@ public class Class1
         return ds;
         con.Close();
     }
+    public static int update(string strupdate)
+    {
+        SqlConnection con = new SqlConnection(sc);
+        con.Open();
+        SqlCommand cmd = new SqlCommand(strupdate, con);
+        int i;
+        i = cmd.ExecuteNonQuery();
+        return i;
+        con.Close();
+    }
+    public static int delete(string strdelete)
+    {
+        SqlConnection con = new SqlConnection(sc);
+        con.Open();
+        SqlCommand cmd = new SqlCommand(strdelete, con);
+        int i;
+        i = cmd.ExecuteNonQuery();
+        return i;
+        con.Close();
+    }
 }

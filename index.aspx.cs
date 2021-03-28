@@ -9,6 +9,7 @@ public partial class index : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Home";
         Image1.ImageUrl = "upload/blog_05.jpg";
         Image2.ImageUrl = "upload/blog_06.jpg";
         Image3.ImageUrl = "upload/blog_05.jpg";
