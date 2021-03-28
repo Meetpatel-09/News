@@ -149,7 +149,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link color-red-hover" href="signout.aspx">Sign Out</a>
+                                <a class="nav-link color-red-hover" href="logout.aspx">Sign Out</a>
                             </li>
                         </ul>
                     </div>
