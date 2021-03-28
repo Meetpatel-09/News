@@ -125,14 +125,23 @@
                                     <li><asp:LinkButton ID="LinkButton4" runat="server"> <asp:Label ID="Label4" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
                                     <li><asp:LinkButton ID="LinkButton5" runat="server"> <asp:Label ID="Label5" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
                                     <li><asp:LinkButton ID="LinkButton6" runat="server"> <asp:Label ID="Label6" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton7" runat="server"> <asp:Label ID="Label7" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton8" runat="server"> <asp:Label ID="Label8" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton9" runat="server"> <asp:Label ID="Label9" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton10" runat="server"> <asp:Label ID="Label10" runat="server" class="dropdown-item" Text="Label"></asp:Label></asp:LinkButton></li>
                                 </ul>
                             </li>
+                            <asp:Panel ID="pUpload" runat="server">
                             <li class="nav-item">
-                                <a class="nav-link color-pink-hover" href="#">Upload</a>
+                                <a class="nav-link color-pink-hover" href="newsUpload.aspx">Upload</a>
                             </li>
+                            </asp:Panel>
+                            <asp:Panel ID="pManage" runat="server">
                             <li class="nav-item">
-                                <a class="nav-link color-grey-hover" href="#">Manage</a>
+                                <a class="nav-link color-grey-hover" href="admin.aspx">Manage</a>
                             </li>
+                            </asp:Panel>
+                            <asp:Panel ID="pSignUp" runat="server">
                             <li class="nav-item dropdown has-submenu">
                                 <a class="nav-link dropdown-toggle color-aqua-hover" href="#" id="dropDownSignUp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sing Up</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropDownSignUp">
@@ -140,6 +149,8 @@
                                     <li><a class="dropdown-item" href="reporterReg.aspx">Reporter</a></li>
                                 </ul>
                             </li>
+                            </asp:Panel>
+                            <asp:Panel ID="pSignIn" runat="server">
                             <li class="nav-item dropdown has-submenu color-green-hover">
                                 <a class="nav-link dropdown-toggle color-aqua-hover" href="#" id="dropDownSignIn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sing In</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropDownSignIn">
@@ -148,9 +159,17 @@
                                     <li><a class="dropdown-item" href="loginAdmin.aspx">Admin</a></li>
                                 </ul>
                             </li>
+                            </asp:Panel>
+                            <asp:Panel ID="pMyProfile" runat="server">
+                            <li class="nav-item">
+                                <a class="nav-link color-red-hover" href="myProfile.aspx">My Profile</a>
+                            </li>
+                            </asp:Panel>
+                            <asp:Panel ID="pSignOut" runat="server">
                             <li class="nav-item">
                                 <a class="nav-link color-red-hover" href="logout.aspx">Sign Out</a>
                             </li>
+                            </asp:Panel>
                         </ul>
                     </div>
                 </nav>

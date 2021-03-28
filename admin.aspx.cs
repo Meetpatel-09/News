@@ -9,7 +9,7 @@ public partial class admin : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Session["title"] = "Admin Home";
+        Session["title"] = "Manage";
         if (Session["admin_login"] == null)
         {
             Response.Redirect("index.aspx", true);
