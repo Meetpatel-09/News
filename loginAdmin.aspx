@@ -19,7 +19,7 @@
 										&nbsp; Email
                                         <asp:TextBox ID="txid" CssClass="form-control" placeholder="Email address" runat="server"></asp:TextBox>
 										&nbsp; Password
-                                        <asp:TextBox ID="txpwd" CssClass="form-control" placeholder="Password" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="txpwd" CssClass="form-control" placeholder="Password" runat="server" TextMode="Password"></asp:TextBox>
                                         <asp:Label ID="txmsg" runat="server" ForeColor="Red" Visible="False"></asp:Label>
                                         <div class="justify-content-md-center" style="text-align: center">
                                             <asp:Button ID="blogin" CssClass="btn btn-primary" runat="server" Text="Sign In" onclick="blogin_Click" />
