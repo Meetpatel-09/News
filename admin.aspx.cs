@@ -27,13 +27,14 @@ public partial class admin : System.Web.UI.Page
     {
         Response.Redirect("manage_news.aspx", true);
     }
+    protected void user_manage_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("manage_user.aspx", true);
+    }
     protected void btlogout_Click(object sender, EventArgs e)
     {
         Session.Clear();
         Response.Redirect("logout.aspx", true);
     }
-    protected void user_manage_Click(object sender, EventArgs e)
-    {
-        Response.Redirect("manage_user.aspx", true);
-    }
+    
 }
