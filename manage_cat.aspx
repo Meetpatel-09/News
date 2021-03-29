@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="manage_cat.aspx.cs" Inherits="manage_cat" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="manage_cat.aspx.cs" Inherits="manage_cat" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -16,6 +16,26 @@
 							
                             <h4 class="card-title" align="center" style="margin-top: 15px;">Manage category</h4>
                             
+							<div>
+								<table align="center">
+									<tr>
+										<td>
+                                            <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Add new category "></asp:Label> 
+										</td>
+										<td>
+                                            <asp:Button ID="Button1" class="cbtn cbtn-primary" runat="server" Text="Add" onclick="Button1_Click" />
+                                            <asp:TextBox ID="TextBox1" runat="server" Visible="false"  class="cform-control" style="width: 200px" placeholder="Category Name"></asp:TextBox>
+										</td>
+										<td>
+                                            <asp:Button ID="Button2" runat="server" Text="Add" class="cbtn cbtn-primary" onclick="Button2_Click" Visible="false" />
+										</td>
+                                        <td>
+                                            <asp:Label ID="Label1" runat="server"></asp:Label>
+                                        </td>
+									</tr>
+								</table>
+							</div>
+
                             <div class="table-responsive">
                             <table class="table table-striped">
                                 <thead>
@@ -51,7 +71,7 @@
                                 </tr>
                                 <tr>
                                     <td>&nbsp;
-                                     </td>
+                                    </td>
                                     <td>
                                         <asp:TextBox ID="txcat2" runat="server" Visible="False"></asp:TextBox>
                                         <asp:Label ID="lcat2" runat="server"></asp:Label>
@@ -66,20 +86,18 @@
                                 </tr>
                                 <tr>
                                     <td>&nbsp;
-                                     </td>
+                                    </td>
                                     <td>
                                         <asp:TextBox ID="txcat3" runat="server" Visible="False"></asp:TextBox>
                                         <asp:Label ID="lcat3" runat="server"></asp:Label>
                                     </td>
-                                   
 								    <td>
                                         <asp:Button ID="btedit3" runat="server" class="cbtn cbtn-outline-info" Text="Edit" onclick="btedit3_Click" />
                                         <asp:Button ID="btupdate3" runat="server" onclick="btupdate3_Click"  class="cbtn cbtn-outline-info" Text="Update" Visible="False" />
                                     </td>
 									<td>
-                                    <asp:Button ID="btdelete3" runat="server" onclick="btdelete3_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
+                                        <asp:Button ID="btdelete3" runat="server" onclick="btdelete3_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
                                     </td>
-									
                                 </tr>
                                 <tr>
                                     <td>&nbsp;
@@ -93,13 +111,12 @@
                                         <asp:Button ID="btupdate4" runat="server" onclick="btupdate4_Click"  class="cbtn cbtn-outline-info" Text="Update" Visible="False" />
                                     </td>
 									<td>
-                                    
+                                        <asp:Button ID="btdelete4" runat="server" onclick="btdelete4_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
                                     </td>
-									
                                 </tr>
                                 <tr>
                                     <td>&nbsp;
-                                     </td>
+                                    </td>
                                     <td>
                                         <asp:TextBox ID="txcat5" runat="server" Visible="False"></asp:TextBox>
                                         <asp:Label ID="lcat5" runat="server"></asp:Label>
@@ -110,9 +127,8 @@
                                         <asp:Button ID="btupdate5" runat="server" onclick="btupdate5_Click"  class="cbtn cbtn-outline-info" Text="Update" Visible="False" />
                                     </td>
 									<td>
-                                    
+                                        <asp:Button ID="btdelete5" runat="server" onclick="btdelete5_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
                                     </td>
-									
                                 </tr>
                                 <tr>
                                     <td>&nbsp;
@@ -127,13 +143,12 @@
                                         <asp:Button ID="btupdate6" runat="server" onclick="btupdate6_Click"  class="cbtn cbtn-outline-info" Text="Update" Visible="False" />
                                     </td>
 									<td>
-                                    
+                                        <asp:Button ID="btdelete6" runat="server" onclick="btdelete6_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
                                     </td>
-									
                                 </tr>
                                 <tr>
                                     <td>&nbsp;
-                                  </td>
+                                    </td>
 									<td>
                                         <asp:TextBox ID="txcat7" runat="server" Visible="False"></asp:TextBox>
                                         <asp:Label ID="lcat7" runat="server"></asp:Label>
@@ -143,12 +158,12 @@
                                         <asp:Button ID="btupdate7" runat="server" onclick="btupdate7_Click"  class="cbtn cbtn-outline-info" Text="Update" Visible="False" />
                                     </td>
 									<td>
-                                    
+                                        <asp:Button ID="btdelete7" runat="server" onclick="btdelete7_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
                                     </td>
                                 </tr>
 								 <tr>
                                     <td>&nbsp;
-                                   </td>
+                                    </td>
 									<td>
                                         <asp:TextBox ID="txcat8" runat="server" Visible="False"></asp:TextBox>
                                         <asp:Label ID="lcat8" runat="server"></asp:Label>
@@ -158,7 +173,7 @@
                                         <asp:Button ID="btupdate8" runat="server" onclick="btupdate8_Click"  class="cbtn cbtn-outline-info" Text="Update" Visible="False" />
                                     </td>
 								    <td>
-                                    
+                                        <asp:Button ID="btdelete8" runat="server" onclick="btdelete8_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
                                     </td>
 								</tr>
 								 <tr>
@@ -173,7 +188,7 @@
                                         <asp:Button ID="btupdate9" runat="server" onclick="btupdate9_Click"  class="cbtn cbtn-outline-info" Text="Update" Visible="False" />
                                     </td>
 								    <td>
-                                    
+                                        <asp:Button ID="btdelete9" runat="server" onclick="btdelete9_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
                                     </td>
 								</tr>
 								<tr>
@@ -188,7 +203,8 @@
                                         <asp:Button ID="btupdate10" runat="server" onclick="btupdate10_Click"  class="cbtn cbtn-outline-info" Text="Update" Visible="False" />
                                     </td>
 									<td>
-								  </td>
+                                        <asp:Button ID="btdelete10" runat="server" onclick="btdelete10_Click" Text="Delete" class="cbtn cbtn-outline-danger" />
+								    </td>
 								</tr>
                                 </tbody>
                             </table>

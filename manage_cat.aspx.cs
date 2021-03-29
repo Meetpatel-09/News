@@ -4,12 +4,208 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data;
 
 public partial class manage_cat : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["admin_login"] != null)
+        {
+            int v, v1;
+            if (Session["v3"] != null)
+            {
+                TextBox2.Text = Session["v3"].ToString();
+                string s4 = TextBox2.Text;
+                int v4 = Convert.ToInt32(s4);
+                v = v4;
+                v1 = 1;
+                v1 = v1 + v;
+            }
+            else
+            {
+                v = 0;
+                v1 = 1;
+            }
+            string s1 = v.ToString();
+            TextBox2.Text = s1;
+            DataSet ds1 = new DataSet();
+            ds1 = Class1.select("select * from tbl_category order by cat_name");
+            int k;
+            k = ds1.Tables[0].Rows.Count;
+            if (ds1 != null && ds1.Tables[0].Rows.Count > 0)
+            {
+                for (int j = v; j < v1; j++)
+                {
+                    if (j == 0)
+                    {
+                        bt_privious.Enabled = false;
+                    }
+                    if (j < k)
+                    {
+                        DataRow dr1 = ds1.Tables[0].Rows[j];
+                        
+                        lcat1.Text = dr1["cat_name"].ToString();
+                        Session["catname1"] = lcat1.Text.ToString();
+                        cid1.Text = dr1["id"].ToString();
+                    }
+                    else
+                    {
+                //        Panel1.Visible = false;
+                //        lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 1) < k)
+                    {
+                        DataRow dr2 = ds1.Tables[0].Rows[j + 1];
+                        lcat2.Text = dr2["cat_name"].ToString();
+                        Session["catname2"] = lcat2.Text.ToString();
+                        cid2.Text = dr2["id"].ToString();
+                    }
+                    else
+                    {
+                 //       Panel2.Visible = false;
+                  //      lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 2) < k)
+                    {
+                        DataRow dr3 = ds1.Tables[0].Rows[j + 2];
+                        lcat3.Text = dr3["cat_name"].ToString();
+                        Session["catname3"] = lcat3.Text.ToString();
+                        cid3.Text = dr3["id"].ToString();
+                    }
+                    else
+                    {
+                      //  Panel3.Visible = false;
+                     //   lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 3) < k)
+                    {
+                        DataRow dr4 = ds1.Tables[0].Rows[j + 3];
+                        lcat4.Text = dr4["cat_name"].ToString();
+                        Session["catname4"] = lcat4.Text.ToString();
+                        cid4.Text = dr4["id"].ToString();
+                    }
+                    else
+                    {
+                    //    Panel4.Visible = false;
+                   //     lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 4) < k)
+                    {
+                        DataRow dr5 = ds1.Tables[0].Rows[j + 4];
+                        lcat5.Text = dr5["cat_name"].ToString();
+                        Session["catname5"] = lcat5.Text.ToString();
+                        cid5.Text = dr5["id"].ToString();
+                    }
+                    else
+                    {
+                   //     Panel5.Visible = false;
+                   //     lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 5) < k)
+                    {
+                        DataRow dr6 = ds1.Tables[0].Rows[j + 5];
+                        lcat6.Text = dr6["cat_name"].ToString();
+                        Session["catname6"] = lcat6.Text.ToString();
+                        cid6.Text = dr6["id"].ToString();
+                    }
+                    else
+                    {
+                      //  Panel6.Visible = false;
+                     //   lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 6) < k)
+                    {
+                        DataRow dr7 = ds1.Tables[0].Rows[j + 6];
+                        lcat7.Text = dr7["cat_name"].ToString();
+                        Session["catname7"] = lcat7.Text.ToString();
+                        cid7.Text = dr7["id"].ToString();
+                    }
+                    else
+                    {
+                  //      Panel7.Visible = false;
+                  //      lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 7) < k)
+                    {
+                        DataRow dr8 = ds1.Tables[0].Rows[j + 7];
+                        lcat8.Text = dr8["cat_name"].ToString();
+                        Session["catname8"] = lcat8.Text.ToString();
+                        cid8.Text = dr8["id"].ToString();
+                    }
+                    else
+                    {
+                  //      Panel8.Visible = false;
+                  //      lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 8) < k)
+                    {
+                        DataRow dr9 = ds1.Tables[0].Rows[j + 8];
+                        lcat9.Text = dr9["cat_name"].ToString();
+                        Session["catname9"] = lcat9.Text.ToString();
+                        cid9.Text = dr9["id"].ToString();
+                    }
+                    else
+                    {
+                //        Panel9.Visible = false;
+                //        lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 9) < k)
+                    {
+                        DataRow dr10 = ds1.Tables[0].Rows[j + 9];
+                        lcat10.Text = dr10["cat_name"].ToString();
+                        Session["catname10"] = lcat10.Text.ToString();
+                        cid10.Text = dr10["id"].ToString();
+                    }
+                    else
+                    {
+                      //  Panel10.Visible = false;
+                     //   lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                    if ((j + 10) < k)
+                    {
 
+                    }
+                    else
+                    {
+                    //    lmsg.Visible = true;
+                        next.Enabled = false;
+                    }
+                }
+            }
+        }
+        else
+        {
+            Response.Redirect("loginAdmin.aspx", true);
+        }
+    }
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        TextBox1.Visible = true;
+        Button2.Visible = true;
+        Label1.Text = null;
+        Button1.Visible = false;
+    }
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        string cn = "insert into tbl_category(cat_name) values('" + TextBox1.Text.ToUpper() + "')";
+        int i = Class1.exQuery(cn);
+        Button1.Visible = true;
+        Label1.Text = "Success";
+        Session["s1"] = TextBox1.Text;
+        TextBox1.Visible = false;
+        Button2.Visible = false;
+        Response.Redirect("manage_cat.aspx", true);
     }
     protected void btedit1_Click(object sender, EventArgs e)
     {
