@@ -51,7 +51,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                //        Panel1.Visible = false;
+                        Panel1.Visible = false;
                 //        lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -64,7 +64,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                 //       Panel2.Visible = false;
+                        Panel2.Visible = false;
                   //      lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -77,7 +77,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                      //  Panel3.Visible = false;
+                        Panel3.Visible = false;
                      //   lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -90,7 +90,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                    //    Panel4.Visible = false;
+                        Panel4.Visible = false;
                    //     lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -103,7 +103,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                   //     Panel5.Visible = false;
+                        Panel5.Visible = false;
                    //     lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -116,7 +116,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                      //  Panel6.Visible = false;
+                        Panel6.Visible = false;
                      //   lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -129,7 +129,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                  //      Panel7.Visible = false;
+                        Panel7.Visible = false;
                   //      lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -142,7 +142,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                  //      Panel8.Visible = false;
+                        Panel8.Visible = false;
                   //      lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -155,7 +155,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                //        Panel9.Visible = false;
+                        Panel9.Visible = false;
                 //        lmsg.Visible = true;
                         next.Enabled = false;
                     }
@@ -168,7 +168,7 @@ public partial class manage_cat : System.Web.UI.Page
                     }
                     else
                     {
-                      //  Panel10.Visible = false;
+                        Panel10.Visible = false;
                      //   lmsg.Visible = true;
                         next.Enabled = false;
                     }
