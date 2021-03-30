@@ -24,7 +24,7 @@ public partial class loginReporter : System.Web.UI.Page
             txpwdc.Text = dr2["password"].ToString();
             txidc.Text = dr2["reporter_id"].ToString();
             txrid.Text = dr2["approve"].ToString();
-            if (txrid.Text == "YES")
+            if (txrid.Text.Trim() == "YES")
             {
                 if (txpwdc.Text == txpwd.Text.Trim())
                 {
