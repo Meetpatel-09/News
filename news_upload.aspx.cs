@@ -10,40 +10,40 @@ public partial class news_upload : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        /* Button1.Attributes.Add("onclick", "document.getElementById('" + FileUpload1.ClientID + "').click(); return false;");
+         Button2.Attributes.Add("onclick", "document.getElementById('" + FileUpload2.ClientID + "').click(); return false;");
+         Button3.Attributes.Add("onclick", "document.getElementById('" + FileUpload3.ClientID + "').click(); return false;"); 
+        */
         if (Session["reporter_id_login"] != null) // if reporter has log in then only he/she can upload news.
         {
-            Button1.Attributes.Add("onclick", "document.getElementById('" + FileUpload1.ClientID + "').click(); return false;");
-            Button2.Attributes.Add("onclick", "document.getElementById('" + FileUpload1.ClientID + "').click(); return false;");
-            Button3.Attributes.Add("onclick", "document.getElementById('" + FileUpload1.ClientID + "').click(); return false;");
-
             if (dlimage.SelectedItem.Value == "0" || dlimage.SelectedItem.Value == "SELECT") //if reporter does not want to upload any image.
             {
                 Session["s1"] = TextBox1.Text.ToString();
                 Label1.Visible = false;
-                Button1.Visible = false;
-                Button2.Visible = false;
-                Button3.Visible = false;
+                FileUpload1.Visible = false;
+                FileUpload2.Visible = false;
+                FileUpload3.Visible = false;
             }
             if (dlimage.SelectedItem.Value == "1") //if reporter want to upload one image
             {
                 Label1.Visible = true;
-                Button1.Visible = true;
-                Button2.Visible = false;
-                Button3.Visible = false;
-            }   
+                FileUpload1.Visible = true;
+                FileUpload2.Visible = false;
+                FileUpload3.Visible = false;
+            }
             if (dlimage.SelectedItem.Value == "2") //if reporter want to upload two images
             {
                 Label1.Visible = true;
-                Button1.Visible = true;
-                Button2.Visible = true;
-                Button3.Visible = false;
-            }   
+                FileUpload1.Visible = true;
+                FileUpload2.Visible = true;
+                FileUpload3.Visible = false;
+            }
             if (dlimage.SelectedItem.Value == "3") //if reporter want to upload three images
             {
                 Label1.Visible = true;
-                Button1.Visible = true;
-                Button2.Visible = true;
-                Button3.Visible = true;
+                FileUpload1.Visible = true;
+                FileUpload2.Visible = true;
+                FileUpload3.Visible = true;
             }
         }
         else // if reporter is not log in then he/she will sent back to log in page.
@@ -110,4 +110,16 @@ public partial class news_upload : System.Web.UI.Page
         Session["year"] = DateTime.Today.Year.ToString();
         Response.Redirect("upload_preview.aspx", true); // jumping to next page.
     }
+   /* protected void Button1_Click(object sender, EventArgs e) // when submit button is pressed the following code will be executed.
+    {
+
+    }
+    protected void Button2_Click(object sender, EventArgs e) // when submit button is pressed the following code will be executed.
+    {
+
+    }
+    protected void Button3_Click(object sender, EventArgs e) // when submit button is pressed the following code will be executed.
+    {
+
+    }*/
 }

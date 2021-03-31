@@ -5,11 +5,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <section class="section">
 			<div id="id01" class="modal">
-			<div class="modal-content animate" style="width: 500px;">
-				<div class="imgcontainer">
-					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<div class="modal-content animate" style="width: 500px;">
+					<div class="imgcontainer">
+					  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+					</div>
 				</div>
-			</div>
 			</div>
             <div class="container">
                 <div class="row">
@@ -70,8 +70,8 @@
 									<div class="form-group row">
 										 <asp:Label ID="Label1" runat="server" class="col-sm-4 col-form-label" Text="Number of photos"></asp:Label>
 										<div class="col-sm-8">
-                                            <asp:FileUpload ID="FileUpload1" runat="server" Visible="False" style="display: none" /><asp:FileUpload ID="FileUpload2" runat="server" Visible="False" style="display: none" /><asp:FileUpload ID="FileUpload3" runat="server" Visible="False" style="display: none" />
-                                            <asp:Button ID="Button1" runat="server" Text="Click here to add frist photo" CssClass="form-control submit-btn" /><asp:Button ID="Button2" runat="server" Text="Click here to add second photo" CssClass="form-control submit-btn" /> <asp:Button ID="Button3" runat="server" Text="Click here to add third photo" CssClass="form-control submit-btn" />
+                                        <!--    <asp:Button ID="Button1" runat="server" Text="Click here to add frist photo" CssClass="form-control submit-btn" OnClientClick="Button1_Click" /><asp:Button ID="Button2" runat="server" Text="Click here to add second photo" CssClass="form-control submit-btn" OnClientClick="Button2_Click" /> <asp:Button ID="Button3" runat="server" Text="Click here to add third photo" CssClass="form-control submit-btn" OnClientClick="Button3_Click" /> -->
+											<asp:FileUpload ID="FileUpload1" runat="server" CssClass="form-control"/><asp:FileUpload ID="FileUpload2" runat="server" CssClass="form-control" /><asp:FileUpload ID="FileUpload3" runat="server" CssClass="form-control"/>
 										</div>
 									</div>
 
