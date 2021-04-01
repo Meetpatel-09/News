@@ -147,7 +147,7 @@
                             </asp:Panel>
                             <asp:Panel ID="pSignUp" runat="server">
                             <li class="nav-item dropdown has-submenu">
-                                <a class="nav-link dropdown-toggle color-aqua-hover" href="#" id="dropDownSignUp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sing Up</a>
+                                <a class="nav-link dropdown-toggle color-aqua-hover" href="#" id="dropDownSignUp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign Up</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropDownSignUp">
                                     <li><a class="dropdown-item" href="UserReg.aspx">User</a></li>
                                     <li><a class="dropdown-item" href="reporterReg.aspx">Reporter</a></li>
@@ -156,7 +156,7 @@
                             </asp:Panel>
                             <asp:Panel ID="pSignIn" runat="server">
                             <li class="nav-item dropdown has-submenu color-green-hover">
-                                <a class="nav-link dropdown-toggle color-aqua-hover" href="#" id="dropDownSignIn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sing In</a>
+                                <a class="nav-link dropdown-toggle color-aqua-hover" href="#" id="dropDownSignIn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropDownSignIn">
                                     <li><a class="dropdown-item" href="loginUser.aspx">User</a></li>
                                     <li><a class="dropdown-item" href="loginReporter.aspx">Reporter</a></li>

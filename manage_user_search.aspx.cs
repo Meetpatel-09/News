@@ -182,7 +182,7 @@ public partial class manage_user_search : System.Web.UI.Page
         }
         else
         {
-            Response.Redirect("login.aspx", true);
+            Response.Redirect("manage_user.aspx", true);
         }
     }
     protected void bt_privious_Click(object sender, EventArgs e)

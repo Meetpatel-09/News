@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage2.master" AutoEventWireup="true" CodeFile="manage_user_search.aspx.cs" Inherits="manage_user_search" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="manage_user_search.aspx.cs" Inherits="manage_user_search" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
@@ -23,7 +23,7 @@
                                             <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Search Reporter: "></asp:Label>
 										</td>
 										<td>
-                                            <asp:TextBox ID="Txsearch" runat="server"  CssClass="cform-control" style="width: 450px" placeholder="Frist Name, Email or Mobile Number"></asp:TextBox>
+                                            <asp:TextBox ID="Txsearch" runat="server"  CssClass="cform-control" style="width: 450px" placeholder="Full Name, Email or Mobile Number"></asp:TextBox>
 										</td>
 										<td>
                                             <asp:Button ID="bt_search" CssClass="cbtn cbtn-primary" runat="server" Text="Search" onclick="bt_search_Click" />
