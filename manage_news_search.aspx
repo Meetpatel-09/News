@@ -73,10 +73,7 @@
                                                 <asp:Label ID="lreportername1" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Label ID="lapprove1" runat="server"></asp:Label>
-                                            </td>
-									        <td>
-                                                <asp:Button ID="bt_approve1" runat="server" CssClass="cbtn cbtn-outline-success" onclick="bt_approve1_Click" />
+                                                <asp:Label ID="ldate1" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view1" runat="server" Text="View/Edit" CssClass="cbtn cbtn-outline-info" onclick="bt_view1_Click" />
@@ -101,10 +98,7 @@
                                                 <asp:Label ID="lreportername2" runat="server"></asp:Label>
                                              </td>
 									        <td>
-                                                <asp:Label ID="lapprove2" runat="server"></asp:Label>
-                                            </td>
-									        <td>
-                                                <asp:Button ID="bt_approve2" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve2_Click" />
+                                                <asp:Label ID="ldate2" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view2" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view2_Click" />
@@ -129,10 +123,7 @@
                                                 <asp:Label ID="lreportername3" runat="server"></asp:Label>
                                              </td>
 									        <td>
-                                                <asp:Label ID="lapprove3" runat="server"></asp:Label>
-                                            </td>
-									        <td>
-                                                <asp:Button ID="bt_approve3" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve3_Click" />
+                                                <asp:Label ID="ldate3" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view3" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view3_Click" />
@@ -156,10 +147,7 @@
                                                 <asp:Label ID="lreportername4" runat="server"></asp:Label>
                                              </td>
 									        <td>
-                                                <asp:Label ID="lapprove4" runat="server"></asp:Label>
-                                            </td>
-									        <td>
-                                                <asp:Button ID="bt_approve4" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve4_Click" />
+                                                <asp:Label ID="ldate4" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view4" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view4_Click" />
@@ -184,10 +172,7 @@
                                                 <asp:Label ID="lreportername5" runat="server"></asp:Label>
                                              </td>
 									        <td>
-                                                <asp:Label ID="lapprove5" runat="server"></asp:Label>
-                                            </td>
-									        <td>
-                                                <asp:Button ID="bt_approve5" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve5_Click" />
+                                                <asp:Label ID="ldate5" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view5" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view5_Click" />
@@ -212,10 +197,7 @@
                                                 <asp:Label ID="lreportername6" runat="server"></asp:Label>
                                              </td>
 									        <td>
-                                                <asp:Label ID="lapprove6" runat="server"></asp:Label>
-                                            </td>
-									        <td>
-                                                <asp:Button ID="bt_approve6" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve6_Click" />
+                                                <asp:Label ID="ldate6" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view6" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view6_Click" />
@@ -240,10 +222,7 @@
                                                 <asp:Label ID="lreportername7" runat="server"></asp:Label>
                                              </td>
 									        <td>
-                                                <asp:Label ID="lapprove7" runat="server"></asp:Label>
-                                            </td>
-									        <td>
-                                                <asp:Button ID="bt_approve7" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve7_Click" />
+                                                <asp:Label ID="ldate7" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view7" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view7_Click" />
@@ -268,10 +247,7 @@
                                                 <asp:Label ID="lreportername8" runat="server"></asp:Label>
                                              </td>
 									        <td>
-                                                <asp:Label ID="lapprove8" runat="server"></asp:Label>
-                                            </td>
-									         <td>
-                                                <asp:Button ID="bt_approve8" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve8_Click" />
+                                                <asp:Label ID="ldate8" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view8" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view8_Click" />
@@ -296,10 +272,7 @@
                                                 <asp:Label ID="lreportername9" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Label ID="lapprove9" runat="server"></asp:Label>
-                                            </td>
-									         <td>
-                                                <asp:Button ID="bt_approve9" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve9_Click" />
+                                                <asp:Label ID="ldate9" runat="server"></asp:Label>
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_view9" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view9_Click" />
@@ -324,10 +297,7 @@
                                                 <asp:Label ID="lreportername10" runat="server"></asp:Label>
                                              </td>
 									        <td>
-                                                <asp:Label ID="lapprove10" runat="server"></asp:Label>
-                                            </td>
-									        <td>
-                                                <asp:Button ID="bt_approve10" runat="server" class="cbtn cbtn-outline-success" onclick="bt_approve10_Click" />
+                                                <asp:Label ID="ldate10" runat="server"></asp:Label>
                                             </td>
 									        <td>                                
                                                 <asp:Button ID="bt_view10" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view10_Click" />
