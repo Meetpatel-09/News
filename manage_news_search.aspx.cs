@@ -12,9 +12,9 @@ public partial class manage_news_search : System.Web.UI.Page
     {
         if (Session["txsearch"] != null)
         {
-            Txsearch.Text = Session["txsearch"].ToString();
+            TextBox2.Text = Session["txsearch"].ToString();
         }
-        if (Txsearch.Text == "")
+        if (TextBox2.Text == "")
         {
             Response.Redirect("manage_user.aspx", true);
         }
@@ -37,7 +37,7 @@ public partial class manage_news_search : System.Web.UI.Page
         string s1 = v.ToString();
         TextBox1.Text = s1;
         DataSet ds1 = new DataSet();
-        ds1 = Class1.select("select * from tbl_user where email= '" + Txsearch.Text + "' OR mobile= '" + Txsearch.Text + "' OR fname= '" + Txsearch.Text + "' order by fname");
+        ds1 = Class1.select("select * from tbl_user where email= '" + TextBox2.Text + "' OR mobile= '" + TextBox2.Text + "' OR fname= '" + TextBox2.Text + "' order by fname");
         int k;
         k = ds1.Tables[0].Rows.Count;
         if (ds1 != null && ds1.Tables[0].Rows.Count > 0)
