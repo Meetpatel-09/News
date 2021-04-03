@@ -14,7 +14,7 @@
                         <div class="card">
                         <div class="card-body">
 							
-                            <h4 class="card-title" align="center" style="margin-top: 15px;">Manage Reprter</h4>
+                            <h4 class="card-title" align="center" style="margin-top: 15px;">Manage News</h4>
                             
                             <div>
 								<table align="center">
@@ -23,10 +23,10 @@
                                             <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Search Reporter: "></asp:Label>
 										</td>
 										<td>
-                                            <asp:TextBox ID="Txsearch" runat="server"  CssClass="cform-control" style="width: 450px" placeholder="Name, Email, Mobile Number or is approved type 'YES' or 'NO'."></asp:TextBox>
+                                            <asp:TextBox ID="TextBox2" runat="server" Width="450px"></asp:TextBox>
 										</td>
 										<td>
-                                            <asp:Button ID="bt_search" CssClass="cbtn cbtn-primary" runat="server" Text="Search" onclick="bt_search_Click1" />
+                                            <asp:Button ID="Button1" CssClass="cbtn cbtn-primary" runat="server" Text="Search" onclick="Button1_Click" />
 										</td>
 									</tr>
 								</table>
@@ -70,7 +70,7 @@
                                                 <asp:Label ID="ldate1" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view1" runat="server" Text="View/Edit" CssClass="cbtn cbtn-outline-info" onclick="bt_view1_Click" />
+                                                <asp:Button ID="bt_edit1" runat="server" Text="View/Edit" CssClass="cbtn cbtn-outline-info" onclick="bt_edit1_Click" />
 									        </td>
 									        <td>
                                                 <asp:Button ID="bt_delete1" runat="server" Text="Remove"  CssClass="cbtn cbtn-outline-danger" onclick="bt_delete1_Click" />
@@ -92,7 +92,7 @@
                                                 <asp:Label ID="ldate2" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view2" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view2_Click" />
+                                                <asp:Button ID="bt_edit2" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit2_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete2" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete2_Click" />
@@ -114,7 +114,7 @@
                                                 <asp:Label ID="ldate3" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view3" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view3_Click" />
+                                                <asp:Button ID="bt_edit3" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit3_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete3" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete3_Click" />
@@ -136,7 +136,7 @@
                                                 <asp:Label ID="ldate4" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view4" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view4_Click" />
+                                                <asp:Button ID="bt_edit4" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit4_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete4" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete4_Click" />
@@ -158,7 +158,7 @@
                                                 <asp:Label ID="ldate5" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view5" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view5_Click" />
+                                                <asp:Button ID="bt_edit5" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit5_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete5" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete5_Click" />
@@ -180,7 +180,7 @@
                                                 <asp:Label ID="ldate6" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view6" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view6_Click" />
+                                                <asp:Button ID="bt_edit6" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit6_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete6" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete6_Click" />
@@ -202,7 +202,7 @@
                                                 <asp:Label ID="ldate7" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view7" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view7_Click" />
+                                                <asp:Button ID="bt_edit7" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit7_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete7" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete7_Click" />
@@ -224,7 +224,7 @@
                                                 <asp:Label ID="ldate8" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view8" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view8_Click" />
+                                                <asp:Button ID="bt_edit8" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit8_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete8" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete8_Click" />
@@ -246,7 +246,7 @@
                                                 <asp:Label ID="ldate9" runat="server"></asp:Label>
                                             </td>
 									        <td>
-                                                <asp:Button ID="bt_view9" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view9_Click" />
+                                                <asp:Button ID="bt_edit9" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit9_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete9" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete9_Click" />
@@ -268,7 +268,7 @@
                                                 <asp:Label ID="ldate10" runat="server"></asp:Label>
                                             </td>
 									        <td>                                
-                                                <asp:Button ID="bt_view10" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_view10_Click" />
+                                                <asp:Button ID="bt_edit10" runat="server" Text="View/Edit" class="cbtn cbtn-outline-info" onclick="bt_edit10_Click" />
                                             </td>
 									        <td>
                                                 <asp:Button ID="bt_delete10" runat="server" Text="Remove"  class="cbtn cbtn-outline-danger" onclick="bt_delete10_Click" />
@@ -312,7 +312,17 @@
 			</div>
 		</section>
 
-    <asp:TextBox ID="TextBox1" runat="server" Visible="False"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Width="111px" placeholder="Headline or Reporter Name" Visible="False" ></asp:TextBox>
+        <asp:TextBox ID="TextBox3" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox4" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox5" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox6" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox7" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox8" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox9" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox10" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox11" runat="server" Visible="False" Width="93px"></asp:TextBox>
+        <asp:TextBox ID="TextBox12" runat="server" Visible="False" Width="93px"></asp:TextBox>
     
 </asp:Content>
 
