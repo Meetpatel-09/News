@@ -37,7 +37,7 @@ public partial class manage_news : System.Web.UI.Page
                 string s1 = v.ToString();
                 TextBox1.Text = s1;
                 DataSet ds1 = new DataSet();
-                ds1 = Class1.select("SELECT tbl_news.*, tbl_reporter.fname FROM tbl_news INNER JOIN tbl_reporter ON tbl_news.reporter_id = tbl_reporter.reporter_id;");
+                ds1 = Class1.select("SELECT tbl_news.*, tbl_reporter.fname FROM tbl_news INNER JOIN tbl_reporter ON tbl_news.reporter_id = tbl_reporter.reporter_id");
 
                 int k;
                 k = ds1.Tables[0].Rows.Count;

@@ -16,18 +16,28 @@
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <asp:Image ID="Image1" runat="server" alt="" CssClass="img-fluid"></asp:Image>
+                                            <asp:ImageButton ID="ImageButton1" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect">
                                                 <span></span>
                                             </div><!-- end hover -->
                                         </a>
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><asp:HyperLink ID="HyperLink1" runat="server"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></asp:HyperLink></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
-                                        
-                                        <small></small>
-                                        <small><a href="blog-author.html" title="">by Amanda</a></small>
+                                        <h4>
+                                            <asp:LinkButton ID="lbheading1" runat="server">
+                                                <asp:Label ID="lheadline1" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </h4>
+                                        <p>
+                                            <asp:Label ID="ldescription1" runat="server" Text="Label"></asp:Label></p>
+                                        <small>
+                                            <asp:Label ID="ldate1" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        <small>
+                                            <asp:LinkButton ID="lbreporter1" runat="server">
+                                                <asp:Label ID="lreporter1" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
 
@@ -36,19 +46,29 @@
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                             <asp:Image ID="Image2" runat="server" alt="" CssClass="img-fluid"></asp:Image>
+                                            <asp:ImageButton ID="ImageButton2" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect">
                                                 <span></span>
                                             </div><!-- end hover -->
                                         </a>
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><asp:HyperLink ID="HyperLink2" runat="server"><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></asp:HyperLink></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                        <h4>
+                                            <asp:LinkButton ID="lbheading2" runat="server">
+                                                <asp:Label ID="lheadline2" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </h4>
+                                        <p>
+                                            <asp:Label ID="ldescription2" runat="server" Text="Label"></asp:Label></p>
                                         
-                                        <small><a href="single.html" title="">22 July, 2017</a></small>
-                                        <small><a href="blog-author.html" title="">by Martines</a></small>
-                                    </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate2" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter2" runat="server">
+                                                <asp:Label ID="lreporter2" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                                 </div><!-- end blog-box -->
                             </div><!-- end col -->
                         </div><!-- end row -->
@@ -64,19 +84,29 @@
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <asp:Image ID="Image3" runat="server" alt="" CssClass="img-fluid"></asp:Image>
+                                            <asp:ImageButton ID="ImageButton3" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect">
                                                 <span></span>
                                             </div><!-- end hover -->
                                         </a>
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><asp:HyperLink ID="HyperLink3" runat="server"><asp:Label ID="Label3" runat="server" Text="Label"></asp:Label></asp:HyperLink></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                        <h4>
+                                            <asp:LinkButton ID="lbheading3" runat="server">
+                                                <asp:Label ID="lheadline3" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </h4>
+                                        <p>
+                                            <asp:Label ID="ldescription3" runat="server" Text="Label"></asp:Label></p>
                                         
-                                        <small><a href="single.html" title="">24 July, 2017</a></small>
-                                        <small><a href="blog-author.html" title="">by Amanda</a></small>
-                                    </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate3" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter3" runat="server">
+                                                <asp:Label ID="lreporter3" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                                 </div><!-- end blog-box -->
 
                                 <hr class="invis">
@@ -84,19 +114,29 @@
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <asp:Image ID="Image4" runat="server" alt="" CssClass="img-fluid"></asp:Image>
+                                            <asp:ImageButton ID="ImageButton4" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect">
                                                 <span></span>
                                             </div><!-- end hover -->
                                         </a>
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
-                                        <h4><asp:HyperLink ID="HyperLink4" runat="server"><asp:Label ID="Label4" runat="server" Text="Label"></asp:Label></asp:HyperLink></h4>
-                                        <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                        <h4>
+                                            <asp:LinkButton ID="lbheading4" runat="server">
+                                                <asp:Label ID="lheadline4" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </h4>
+                                        <p>
+                                            <asp:Label ID="ldescription4" runat="server" Text="Label"></asp:Label></p>
                                         
-                                        <small><a href="single.html" title="">22 July, 2017</a></small>
-                                        <small><a href="blog-author.html" title="">by Martines</a></small>
-                                    </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate4" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter4" runat="server">
+                                                <asp:Label ID="lreporter4" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                                 </div><!-- end blog-box -->
                             </div><!-- end col -->
                         </div><!-- end row -->
@@ -116,19 +156,28 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         <a href="#" title="">
-                                            <img src="upload/blog_square_01.jpg" alt="" class="img-fluid">
+                                            <asp:ImageButton ID="ImageButton5" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
                                         </a>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 <div class="blog-meta big-meta col-md-8">
-                                    <h4><a href="single.html" title="">5 Beautiful buildings you need to visit without dying</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                    <h4>
+                                        <asp:LinkButton ID="lbheading5" runat="server">
+                                            <asp:Label ID="lheadline5" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </h4>
+                                    <p><asp:Label ID="ldescription5" runat="server" Text="Label"></asp:Label></p>
                                     
-                                    <small><a href="single.html" title="">21 July, 2017</a></small>
-                                    <small><a href="blog-author.html" title="">by Boby</a></small>
-                                </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate5" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter5" runat="server">
+                                                <asp:Label ID="lreporter5" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
 
                             <hr class="invis">
@@ -137,19 +186,29 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <img src="upload/blog_square_02.jpg" alt="" class="img-fluid">
+                                            <asp:ImageButton ID="ImageButton6" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
                                         </a>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 <div class="blog-meta big-meta col-md-8">
-                                    <h4><a href="single.html" title="">Let's make an introduction to the glorious world of history</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                    <h4>
+                                        <asp:LinkButton ID="lbheading6" runat="server">
+                                            <asp:Label ID="lheadline6" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </h4>
+                                    <p>
+                                            <asp:Label ID="ldescription6" runat="server" Text="Label"></asp:Label></p>
                                     
-                                    <small><a href="single.html" title="">20 July, 2017</a></small>
-                                    <small><a href="blog-author.html" title="">by Samanta</a></small>
-                                </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate6" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter6" runat="server">
+                                                <asp:Label ID="lreporter6" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
 
                             <hr class="invis">
@@ -158,19 +217,29 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <img src="upload/blog_square_03.jpg" alt="" class="img-fluid">
+                                            <asp:ImageButton ID="ImageButton7" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
                                         </a>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 <div class="blog-meta big-meta col-md-8">
-                                    <h4><a href="single.html" title="">Did you see the most beautiful sea in the world?</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                    <h4>
+                                        <asp:LinkButton ID="lbheading7" runat="server">
+                                            <asp:Label ID="lheadline7" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </h4>
+                                    <p>
+                                            <asp:Label ID="ldescription7" runat="server" Text="Label"></asp:Label></p>
                                     
-                                    <small><a href="single.html" title="">19 July, 2017</a></small>
-                                    <small><a href="blog-author.html" title="">by Jackie</a></small>
-                                </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate7" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter7" runat="server">
+                                                <asp:Label ID="lreporter7" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
                         </div><!-- end blog-list -->
 
@@ -182,19 +251,29 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <img src="upload/blog_square_05.jpg" alt="" class="img-fluid">
+                                            <asp:ImageButton ID="ImageButton8" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
                                         </a>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 <div class="blog-meta big-meta col-md-8">
-                                    <h4><a href="single.html" title="">Banana-chip chocolate cake recipe</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                    <h4>
+                                        <asp:LinkButton ID="lbheading8" runat="server">
+                                            <asp:Label ID="lheadline8" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </h4>
+                                    <p>
+                                            <asp:Label ID="ldescription8" runat="server" Text="Label"></asp:Label></p>
                                     
-                                    <small><a href="single.html" title="">11 July, 2017</a></small>
-                                    <small><a href="blog-author.html" title="">by Matilda</a></small>
-                                </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate8" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter8" runat="server">
+                                                <asp:Label ID="lreporter8" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
 
                             <hr class="invis">
@@ -203,19 +282,29 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <img src="upload/blog_square_06.jpg" alt="" class="img-fluid">
+                                            <asp:ImageButton ID="ImageButton9" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
                                         </a>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 <div class="blog-meta big-meta col-md-8">
-                                    <h4><a href="single.html" title="">10 practical ways to choose organic vegetables</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                    <h4>
+                                        <asp:LinkButton ID="lbheading9" runat="server">
+                                            <asp:Label ID="lheadline9" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </h4>
+                                    <p>
+                                            <asp:Label ID="ldescription9" runat="server" Text="Label"></asp:Label></p>
                                     
-                                    <small><a href="single.html" title="">10 July, 2017</a></small>
-                                    <small><a href="blog-author.html" title="">by Matilda</a></small>
-                                </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate9" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter9" runat="server">
+                                                <asp:Label ID="lreporter9" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
 
                             <hr class="invis">
@@ -224,19 +313,28 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         <a href="single.html" title="">
-                                            <img src="upload/blog_square_07.jpg" alt="" class="img-fluid">
+                                            <asp:ImageButton ID="ImageButton10" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
                                         </a>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 <div class="blog-meta big-meta col-md-8">
-                                    <h4><a href="single.html" title="">We are making homemade ravioli</a></h4>
-                                    <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
+                                    <h4>
+                                        <asp:LinkButton ID="lbheading10" runat="server">
+                                            <asp:Label ID="lheadline10" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </h4>
+                                    <p><asp:Label ID="ldescription10" runat="server" Text="Label"></asp:Label></p>
                                     
-                                    <small><a href="single.html" title="">09 July, 2017</a></small>
-                                    <small><a href="blog-author.html" title="">by Matilda</a></small>
-                                </div><!-- end meta -->
+                                        <small>
+                                            <asp:Label ID="ldate10" runat="server" Text="Label"></asp:Label>
+                                        </small>
+                                        &nbsp;<small><asp:LinkButton ID="lbreporter10" runat="server">
+                                                <asp:Label ID="lreporter10" runat="server" Text="Label"></asp:Label>
+                                            </asp:LinkButton>
+                                        </small>
+                                    &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
                         </div><!-- end blog-list -->
                     </div><!-- end col -->
@@ -244,5 +342,13 @@
 
             </div><!-- end container -->
         </section>
+
+    <asp:TextBox ID="TextBox1" runat="server" Visible="False"></asp:TextBox>
+    <asp:TextBox ID="TextBox2" runat="server" Visible="False"></asp:TextBox>
+    <asp:TextBox ID="TextBox3" runat="server" Visible="False"></asp:TextBox>
+    <asp:TextBox ID="TextBox4" runat="server" Visible="False"></asp:TextBox>
+    <asp:Button ID="bprevious" runat="server" Text="Previous" Width="100px" Visible="false" onclick="bprevious_Click" /> 
+    <asp:Button ID="bnext" runat="server" Text="Next" Width="100px" Visible="false" onclick="bnext_Click" /> 
+    
 </asp:Content>
 
