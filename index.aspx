@@ -26,7 +26,7 @@
                                         <h4><asp:HyperLink ID="HyperLink1" runat="server"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></asp:HyperLink></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                         
-                                        <small><a href="single.html" title="">24 July, 2017</a></small>
+                                        <small></small>
                                         <small><a href="blog-author.html" title="">by Amanda</a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->

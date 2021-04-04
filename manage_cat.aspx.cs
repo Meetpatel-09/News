@@ -10,6 +10,7 @@ public partial class manage_cat : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Manage Categories";
         if (Session["admin_login"] != null)
         {
             int v, v1;

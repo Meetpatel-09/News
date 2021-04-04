@@ -10,6 +10,7 @@ public partial class manage_rporter_search : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Manage Reporters";
         if (Session["txsearch"] != null)
         {
             Txsearch.Text = Session["txsearch"].ToString();

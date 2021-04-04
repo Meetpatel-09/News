@@ -10,6 +10,7 @@ public partial class manage_news_search : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Manage News";
         if (Session["txsearch"] != null)
         {
             TextBox2.Text = Session["txsearch"].ToString();

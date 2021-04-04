@@ -10,6 +10,7 @@ public partial class upload_preview : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Upload Preview";
         if (Session["reporter_id_login"] != null)
         {
             TextBox1.Text = Session["reporter_id_login"].ToString();

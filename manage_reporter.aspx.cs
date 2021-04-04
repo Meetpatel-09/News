@@ -10,6 +10,7 @@ public partial class manage_reporter : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Manage Reporters";
         if (Session["admin_login"] != null)
         {
             if (Session["txsearch"] != null)

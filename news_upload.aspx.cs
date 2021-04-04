@@ -10,6 +10,7 @@ public partial class news_upload : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Session["title"] = "Upload News";
         /* Button1.Attributes.Add("onclick", "document.getElementById('" + FileUpload1.ClientID + "').click(); return false;");
          Button2.Attributes.Add("onclick", "document.getElementById('" + FileUpload2.ClientID + "').click(); return false;");
          Button3.Attributes.Add("onclick", "document.getElementById('" + FileUpload3.ClientID + "').click(); return false;"); 

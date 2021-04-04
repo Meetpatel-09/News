@@ -9,6 +9,6 @@ public partial class news_showall : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        Session["title"] = "Home";
     }
 }
