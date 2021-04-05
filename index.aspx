@@ -28,8 +28,7 @@
                                                 <asp:Label ID="lheadline1" runat="server" Text="Label"></asp:Label>
                                             </asp:LinkButton>
                                         </h4>
-                                        <p>
-                                            <asp:Label ID="ldescription1" runat="server" Text="Label"></asp:Label></p>
+                                        <p><asp:Label ID="ldescription1" runat="server" Text="Label"></asp:Label></p>
                                         <small>
                                             <asp:Label ID="ldate1" runat="server" Text="Label"></asp:Label>
                                         </small>
@@ -58,9 +57,7 @@
                                                 <asp:Label ID="lheadline2" runat="server" Text="Label"></asp:Label>
                                             </asp:LinkButton>
                                         </h4>
-                                        <p>
-                                            <asp:Label ID="ldescription2" runat="server" Text="Label"></asp:Label></p>
-                                        
+                                        <p><asp:Label ID="ldescription2" runat="server" Text="Label"></asp:Label></p>
                                         <small>
                                             <asp:Label ID="ldate2" runat="server" Text="Label"></asp:Label>
                                         </small>
@@ -96,9 +93,7 @@
                                                 <asp:Label ID="lheadline3" runat="server" Text="Label"></asp:Label>
                                             </asp:LinkButton>
                                         </h4>
-                                        <p>
-                                            <asp:Label ID="ldescription3" runat="server" Text="Label"></asp:Label></p>
-                                        
+                                        <p><asp:Label ID="ldescription3" runat="server" Text="Label"></asp:Label></p>
                                         <small>
                                             <asp:Label ID="ldate3" runat="server" Text="Label"></asp:Label>
                                         </small>
@@ -126,9 +121,7 @@
                                                 <asp:Label ID="lheadline4" runat="server" Text="Label"></asp:Label>
                                             </asp:LinkButton>
                                         </h4>
-                                        <p>
-                                            <asp:Label ID="ldescription4" runat="server" Text="Label"></asp:Label></p>
-                                        
+                                        <p><asp:Label ID="ldescription4" runat="server" Text="Label"></asp:Label></p>
                                         <small>
                                             <asp:Label ID="ldate4" runat="server" Text="Label"></asp:Label>
                                         </small>
@@ -169,15 +162,14 @@
                                         </asp:LinkButton>
                                     </h4>
                                     <p><asp:Label ID="ldescription5" runat="server" Text="Label"></asp:Label></p>
-                                    
-                                        <small>
-                                            <asp:Label ID="ldate5" runat="server" Text="Label"></asp:Label>
-                                        </small>
-                                        &nbsp;<small><asp:LinkButton ID="lbreporter5" runat="server">
-                                                <asp:Label ID="lreporter5" runat="server" Text="Label"></asp:Label>
-                                            </asp:LinkButton>
-                                        </small>
-                                    &nbsp;</div><!-- end meta -->
+                                    <small>
+                                        <asp:Label ID="ldate5" runat="server" Text="Label"></asp:Label>
+                                    </small>
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter5" runat="server">
+                                            <asp:Label ID="lreporter5" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </small>
+                                &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
 
                             <hr class="invis">
@@ -198,17 +190,15 @@
                                             <asp:Label ID="lheadline6" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
-                                    <p>
-                                            <asp:Label ID="ldescription6" runat="server" Text="Label"></asp:Label></p>
-                                    
-                                        <small>
-                                            <asp:Label ID="ldate6" runat="server" Text="Label"></asp:Label>
-                                        </small>
-                                        &nbsp;<small><asp:LinkButton ID="lbreporter6" runat="server">
-                                                <asp:Label ID="lreporter6" runat="server" Text="Label"></asp:Label>
-                                            </asp:LinkButton>
-                                        </small>
-                                    &nbsp;</div><!-- end meta -->
+                                    <p><asp:Label ID="ldescription6" runat="server" Text="Label"></asp:Label></p>
+                                    <small>
+                                        <asp:Label ID="ldate6" runat="server" Text="Label"></asp:Label>
+                                    </small>
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter6" runat="server">
+                                            <asp:Label ID="lreporter6" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </small>
+                                &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
 
                             <hr class="invis">
@@ -229,17 +219,15 @@
                                             <asp:Label ID="lheadline7" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
-                                    <p>
-                                            <asp:Label ID="ldescription7" runat="server" Text="Label"></asp:Label></p>
-                                    
-                                        <small>
-                                            <asp:Label ID="ldate7" runat="server" Text="Label"></asp:Label>
-                                        </small>
-                                        &nbsp;<small><asp:LinkButton ID="lbreporter7" runat="server">
-                                                <asp:Label ID="lreporter7" runat="server" Text="Label"></asp:Label>
-                                            </asp:LinkButton>
-                                        </small>
-                                    &nbsp;</div><!-- end meta -->
+                                    <p><asp:Label ID="ldescription7" runat="server" Text="Label"></asp:Label></p>
+                                    <small>
+                                        <asp:Label ID="ldate7" runat="server" Text="Label"></asp:Label>
+                                    </small>
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter7" runat="server">
+                                            <asp:Label ID="lreporter7" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </small>
+                                &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
                         </div><!-- end blog-list -->
 
@@ -263,17 +251,15 @@
                                             <asp:Label ID="lheadline8" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
-                                    <p>
-                                            <asp:Label ID="ldescription8" runat="server" Text="Label"></asp:Label></p>
-                                    
-                                        <small>
-                                            <asp:Label ID="ldate8" runat="server" Text="Label"></asp:Label>
-                                        </small>
-                                        &nbsp;<small><asp:LinkButton ID="lbreporter8" runat="server">
-                                                <asp:Label ID="lreporter8" runat="server" Text="Label"></asp:Label>
-                                            </asp:LinkButton>
-                                        </small>
-                                    &nbsp;</div><!-- end meta -->
+                                    <p><asp:Label ID="ldescription8" runat="server" Text="Label"></asp:Label></p>
+                                    <small>
+                                        <asp:Label ID="ldate8" runat="server" Text="Label"></asp:Label>
+                                    </small>
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter8" runat="server">
+                                            <asp:Label ID="lreporter8" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </small>
+                                &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
 
                             <hr class="invis">
@@ -294,17 +280,15 @@
                                             <asp:Label ID="lheadline9" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
-                                    <p>
-                                            <asp:Label ID="ldescription9" runat="server" Text="Label"></asp:Label></p>
-                                    
-                                        <small>
-                                            <asp:Label ID="ldate9" runat="server" Text="Label"></asp:Label>
-                                        </small>
-                                        &nbsp;<small><asp:LinkButton ID="lbreporter9" runat="server">
-                                                <asp:Label ID="lreporter9" runat="server" Text="Label"></asp:Label>
-                                            </asp:LinkButton>
-                                        </small>
-                                    &nbsp;</div><!-- end meta -->
+                                    <p><asp:Label ID="ldescription9" runat="server" Text="Label"></asp:Label></p>
+                                    <small>
+                                        <asp:Label ID="ldate9" runat="server" Text="Label"></asp:Label>
+                                    </small>
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter9" runat="server">
+                                            <asp:Label ID="lreporter9" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </small>
+                                &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
 
                             <hr class="invis">
@@ -326,15 +310,14 @@
                                         </asp:LinkButton>
                                     </h4>
                                     <p><asp:Label ID="ldescription10" runat="server" Text="Label"></asp:Label></p>
-                                    
-                                        <small>
-                                            <asp:Label ID="ldate10" runat="server" Text="Label"></asp:Label>
-                                        </small>
-                                        &nbsp;<small><asp:LinkButton ID="lbreporter10" runat="server">
-                                                <asp:Label ID="lreporter10" runat="server" Text="Label"></asp:Label>
-                                            </asp:LinkButton>
-                                        </small>
-                                    &nbsp;</div><!-- end meta -->
+                                    <small>
+                                        <asp:Label ID="ldate10" runat="server" Text="Label"></asp:Label>
+                                    </small>
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter10" runat="server">
+                                            <asp:Label ID="lreporter10" runat="server" Text="Label"></asp:Label>
+                                        </asp:LinkButton>
+                                    </small>
+                                &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
                         </div><!-- end blog-list -->
                     </div><!-- end col -->
@@ -351,4 +334,3 @@
     <asp:Button ID="bnext" runat="server" Text="Next" Width="100px" Visible="false" onclick="bnext_Click" /> 
     
 </asp:Content>
-
