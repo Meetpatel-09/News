@@ -105,7 +105,7 @@ public partial class manage_news : System.Web.UI.Page
                         }
                         else
                         {
-                            //     Panel4.Visible = false;
+                            Panel4.Visible = false;
                          //   lmsg.Visible = true;
                             next.Enabled = false;
                         }
@@ -150,6 +150,7 @@ public partial class manage_news : System.Web.UI.Page
                         }
                         else
                         {
+                            Panel7.Visible = false;
                             //lmsg.Visible = true;
                             next.Enabled = false;
                         }
