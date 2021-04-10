@@ -300,5 +300,52 @@ public partial class index : System.Web.UI.Page
     {
         Response.Redirect(".aspx", true);
     }
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
 
+    }
+    protected void lbheading1_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void lbreporter1_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
+    protected void lbheading2_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void lbreporter2_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
+    protected void lbheading3_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void lbreporter3_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+
+    }
+    protected void lbheading4_Click(object sender, EventArgs e)
+    {
+
+    }
+    protected void lbreporter4_Click(object sender, EventArgs e)
+    {
+
+    }
 }

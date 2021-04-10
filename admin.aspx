@@ -3,7 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <section class="section">
+    <section class="wb">
+		<div style="padding: 10px;"></div>
         <div class="container">
             <div class="row">
 				<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
@@ -50,5 +51,6 @@
             </div><!-- end row -->
         </div><!-- end container -->
 	</section>
+	<div style="padding: 10px;"></div>
 </asp:Content>
 
