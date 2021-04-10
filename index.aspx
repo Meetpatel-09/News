@@ -5,14 +5,17 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <section class="section">
             <div class="container">
+                <div class="section-title">
+					<h3 class="color-aqua"><a>Breaking News&nbsp;</a></h3> <h4 style="margin-top: -47px; margin-left: 155px"> <marquee><asp:LinkButton ID="lbheadline11" runat="server" OnClick="lbheadline11_Click">•&nbsp;
+            <asp:Label ID="lheadline11" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbtheadline12" runat="server" OnClick="lbheadline12_Click">&nbsp;•&nbsp;
+            <asp:Label ID="lheadline12" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbtheadline13" runat="server" OnClick="lbheadline13_Click">&nbsp;•&nbsp;
+            <asp:Label ID="lheadline13" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton></marquee></h4> 
+                </div>
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="section-title">
-                            <h3 class="color-aqua"><a href="#" title="">Breaking News&nbsp;</a></h3>
-                        </div><!-- end title -->
-
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <asp:Panel ID="Panel1" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
@@ -39,9 +42,11 @@
                                         </small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
-
+                                </asp:Panel>
+                                
                                 <hr class="invis">
 
+                                <asp:Panel ID="Panel2" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
@@ -67,6 +72,7 @@
                                         </small>
                                     &nbsp;</div><!-- end meta -->
                                 </div><!-- end blog-box -->
+                                </asp:Panel>
                             </div><!-- end col -->
                         </div><!-- end row -->
                     </div><!-- end col -->
@@ -78,6 +84,7 @@
 
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <asp:Panel ID="Panel3" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
@@ -103,9 +110,11 @@
                                         </small>
                                     &nbsp;</div><!-- end meta -->
                                 </div><!-- end blog-box -->
-
+                                </asp:Panel>
+                                
                                 <hr class="invis">
 
+                                <asp:Panel ID="Panel4" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
                                         <a href="single.html" title="">
@@ -131,6 +140,7 @@
                                         </small>
                                     &nbsp;</div><!-- end meta -->
                                 </div><!-- end blog-box -->
+                                </asp:Panel>
                             </div><!-- end col -->
                         </div><!-- end row -->
                     </div><!-- end col -->
@@ -138,13 +148,19 @@
 
                 <hr class="invis1">
 
+                <div class="section-title">
+					<h3 class="color-green"><a href="blog-category-01.html" title="">News&nbsp;</a></h3>
+					<h4 style="margin-top: -47px; margin-left: 100px"> <marquee><asp:LinkButton ID="lbheadline14" runat="server" OnClick="lbheadline14_Click">•&nbsp;
+               <asp:Label ID="lheadline14" runat="server" Text="Label" Font-Size="16px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbheadline15" runat="server" OnClick="lbheadline15_Click">&nbsp;•&nbsp;
+               <asp:Label ID="lheadline15" runat="server" Text="Label" Font-Size="16px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbheadline16" runat="server" OnClick="lbheadline16_Click">&nbsp;•&nbsp;
+               <asp:Label ID="lheadline16" runat="server" Text="Label" Font-Size="16px"></asp:Label></asp:LinkButton> </marquee></h4>
+                </div><!-- end title -->
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="blog-list clearfix">
-                            <div class="section-title">
-                                <h3 class="color-green"><a href="#" title="">News&nbsp;</a></h3>
-                            </div><!-- end title -->
 
+                            <asp:Panel ID="Panel5" runat="server">
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
@@ -171,9 +187,9 @@
                                     </small>
                                 &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
-
+                            </asp:Panel>
                             <hr class="invis">
-
+                            <asp:Panel ID="Panel6" runat="server">
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
@@ -200,9 +216,9 @@
                                     </small>
                                 &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
-
+                            </asp:Panel>
                             <hr class="invis">
-
+                            <asp:Panel ID="Panel7" runat="server">
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
@@ -229,12 +245,13 @@
                                     </small>
                                 &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
+                           </asp:Panel>
                         </div><!-- end blog-list -->
 
                         <hr class="invis">
 
                         <div class="blog-list clearfix">
-
+                            <asp:Panel ID="Panel8" runat="server">
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
@@ -261,9 +278,9 @@
                                     </small>
                                 &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
-
+                            </asp:Panel>
                             <hr class="invis">
-
+                            <asp:Panel ID="Panel9" runat="server">
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
@@ -290,9 +307,9 @@
                                     </small>
                                 &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
-
+                            </asp:Panel>
                             <hr class="invis">
-
+                            <asp:Panel ID="Panel10" runat="server">
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
@@ -319,6 +336,7 @@
                                     </small>
                                 &nbsp;</div><!-- end meta -->
                             </div><!-- end blog-box -->
+                            </asp:Panel>
                         </div><!-- end blog-list -->
                     </div><!-- end col -->
                 </div><!-- end row -->

@@ -137,7 +137,7 @@
                             </li>
                             <asp:Panel ID="pUpload" runat="server">
                             <li class="nav-item">
-                                <a class="nav-link color-pink-hover" href="newsUpload.aspx">Upload</a>
+                                <a class="nav-link color-pink-hover" href="news_upload.aspx">Upload</a>
                             </li>
                             </asp:Panel>
                             <asp:Panel ID="pManage" runat="server">
