@@ -11,9 +11,9 @@ public partial class reporter_profile_view_to_user : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Session["title"] = "Reporter Profile";
-        if (Session["rid"] != null)
+        if (Session["r_id"] != null)
         {
-            lrid.Text = Session["rid"].ToString();
+            lrid.Text = Session["r_id"].ToString();
             DataSet ds = new DataSet();
             ds = Class1.select("select * from tbl_reporter where reporter_id = '" + lrid.Text + "'");
             if (ds != null && ds.Tables[0].Rows.Count > 0)
@@ -30,11 +30,11 @@ public partial class reporter_profile_view_to_user : System.Web.UI.Page
         }
         else
         {
-            Response.Redirect("reporter.aspx", true);
+            Response.Redirect("index.aspx", true);
         }
     }
     protected void btback_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("index.aspx", true);
     }
 }

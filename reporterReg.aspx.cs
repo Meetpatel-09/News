@@ -23,11 +23,11 @@ public partial class reporterReg : System.Web.UI.Page
     protected void bsubmit_Click(object sender, EventArgs e)
     {
         DataSet ds1 = new DataSet();
-        ds1 = Class1.select("select * from tbl_reporter where email = '" + txemail.Text + "'");
+        ds1 = Class1.select("select * from tbl_reporter where email = '" + txemail.Text.Trim().ToString() + "'");
         if (ds1.Tables[0].Rows.Count == 0)
         {
             DataSet ds2 = new DataSet();
-            ds2 = Class1.select("select * from tbl_reporter where mobile = '" + txmobile.Text + "'");
+            ds2 = Class1.select("select * from tbl_reporter where mobile = '" + txmobile.Text.Trim().ToString() + "'");
             if (ds2.Tables[0].Rows.Count == 0)
             {
                 int a;
@@ -44,7 +44,7 @@ public partial class reporterReg : System.Web.UI.Page
 
                 Session["email"] = txemail.Text;
 
-                string str = "insert into tbl_reporter(reporter_id,fname,address,gender,email,mobile,password,photo,resume,approve) values('" + TextBox4.Text + "','" + txfname.Text + "','" + txaddress.Text + "','" + dlgender.SelectedItem.Value + "','" + txemail.Text + "','" + txmobile.Text + "','" + txpwd.Text + "','" + TextBox2.Text + "','" + TextBox3.Text + "','NO')";
+                string str = "insert into tbl_reporter(reporter_id,fname,address,gender,email,mobile,password,photo,resume,approve) values('" + TextBox4.Text.Trim().ToString() + "','" + txfname.Text.Trim().ToString() + "','" + txaddress.Text.Trim().ToString() + "','" + dlgender.SelectedItem.Value + "','" + txemail.Text.Trim().ToString() + "','" + txmobile.Text.Trim().ToString() + "','" + txpwd.Text.Trim().ToString() + "','" + TextBox2.Text.Trim().ToString() + "','" + TextBox3.Text.Trim().ToString() + "','NO')";
                 int img = Class1.exQuery(str);
                 Response.Redirect("reporterReg2.aspx", true);
             }

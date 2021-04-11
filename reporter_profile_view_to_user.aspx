@@ -212,7 +212,7 @@
                 &nbsp;</td>
             <td colspan="2">
                 <center>
-                    <asp:Button ID="btback" runat="server" Text="Back" onclick="btback_Click" /></center></td>
+                    <asp:Button ID="btback" runat="server" CssClass="btn btn-primary" Text="Back" onclick="btback_Click" /></center></td>
             <td class="style2">
                 &nbsp;</td>
             <td class="style2">

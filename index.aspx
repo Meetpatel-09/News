@@ -19,12 +19,12 @@
                                 <asp:Panel ID="Panel1" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
-                                            <asp:ImageButton ID="ImageButton1" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton1_Click" />
+                                        <asp:HyperLink ID="HyperLink1" runat="server">
+                                            <asp:ImageButton ID="ImageButton1" AlternateText="Image" runat="server" CssClass="img-fluid"/>
                                             <div class="hovereffect">
                                                 <span></span>
                                             </div><!-- end hover -->
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
                                         <h4>
@@ -50,12 +50,12 @@
                                 <asp:Panel ID="Panel3" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
-                                            <asp:ImageButton ID="ImageButton3" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton3_Click" />
+                                        <asp:HyperLink ID="HyperLink3" runat="server">
+                                            <asp:ImageButton ID="ImageButton3" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect">
                                                 <span></span>
                                             </div><!-- end hover -->
-                                        </a>
+                                       </asp:HyperLink>
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
                                         <h4>
@@ -80,21 +80,18 @@
                     </div><!-- end col -->
 
                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="section-title">
-                            <h3 ><a href="#" title=""></a></h3>
-                        </div><!-- end title -->
-
+                       
                         <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <asp:Panel ID="Panel2" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
-                                            <asp:ImageButton ID="ImageButton2" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton2_Click" />
+                                        <asp:HyperLink ID="HyperLink2" runat="server">
+                                            <asp:ImageButton ID="ImageButton2" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect">
                                                 <span></span>
                                             </div><!-- end hover -->
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
                                         <h4>
@@ -119,12 +116,12 @@
                                 <asp:Panel ID="Panel4" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
-                                            <asp:ImageButton ID="ImageButton4" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton4_Click" />
+                                        <asp:HyperLink ID="HyperLink4" runat="server">
+                                            <asp:ImageButton ID="ImageButton4" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect">
                                                 <span></span>
                                             </div><!-- end hover -->
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
                                         <h4>
@@ -155,7 +152,7 @@
 					<h4 style="margin-top: -47px; margin-left: 100px"> <marquee><asp:LinkButton ID="lbheadline14" runat="server" OnClick="lbheadline14_Click">•&nbsp;
                <asp:Label ID="lheadline14" runat="server" Text="Label" Font-Size="16px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbheadline15" runat="server" OnClick="lbheadline15_Click">&nbsp;•&nbsp;
                <asp:Label ID="lheadline15" runat="server" Text="Label" Font-Size="16px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbheadline16" runat="server" OnClick="lbheadline16_Click">&nbsp;•&nbsp;
-               <asp:Label ID="lheadline16" runat="server" Text="Label" Font-Size="16px"></asp:Label></asp:LinkButton> </marquee></h4>
+               <asp:Label ID="lheadline16" runat="server" Text="Label" Font-Size="16px"></asp:Label></asp:LinkButton></marquee></h4>
                 </div><!-- end title -->
 
                 <div class="row">
@@ -166,16 +163,16 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <a href="#" title="">
+                                        <asp:HyperLink ID="HyperLink5" runat="server">
                                             <asp:ImageButton ID="ImageButton5" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading5" runat="server">
+                                        <asp:LinkButton ID="lbheading5" runat="server" OnClick="lbheading5_Click">
                                             <asp:Label ID="lheadline5" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -183,7 +180,7 @@
                                     <small>
                                         <asp:Label ID="ldate5" runat="server" Text="Label"></asp:Label>
                                     </small>
-                                    &nbsp;<small><asp:LinkButton ID="lbreporter5" runat="server">
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter5" runat="server" OnClick="lbreporter5_Click">
                                             <asp:Label ID="lreporter5" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </small>
@@ -195,10 +192,10 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
+                                        <asp:HyperLink ID="HyperLink6" runat="server">
                                             <asp:ImageButton ID="ImageButton6" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -224,10 +221,10 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
+                                        <asp:HyperLink ID="HyperLink7" runat="server">
                                             <asp:ImageButton ID="ImageButton7" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -257,10 +254,10 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
+                                        <asp:HyperLink ID="HyperLink8" runat="server">
                                             <asp:ImageButton ID="ImageButton8" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -286,10 +283,10 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
+                                        <asp:HyperLink ID="HyperLink9" runat="server">
                                             <asp:ImageButton ID="ImageButton9" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -315,10 +312,10 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <a href="single.html" title="">
+                                        <asp:HyperLink ID="HyperLink10" runat="server">
                                             <asp:ImageButton ID="ImageButton10" AlternateText="Image" runat="server" CssClass="img-fluid" />
                                             <div class="hovereffect"></div>
-                                        </a>
+                                        </asp:HyperLink>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -373,5 +370,35 @@
     <asp:TextBox ID="TextBox2" runat="server" Visible="False"></asp:TextBox>
     <asp:TextBox ID="TextBox3" runat="server" Visible="False"></asp:TextBox>
     <asp:TextBox ID="TextBox4" runat="server" Visible="False"></asp:TextBox>
+
+    <asp:Label ID="lnid1" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid2" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid3" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid4" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid5" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid6" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid7" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid8" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid9" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid10" runat="server" Text="Label" Visible="false"></asp:Label>
+                   
+    <asp:Label ID="lnid11" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid12" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid13" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid14" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid15" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lnid16" runat="server" Text="Label" Visible="false"></asp:Label>
     
+    <asp:Label ID="lrid1" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid2" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid3" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid4" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid5" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid6" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid7" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid8" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid9" runat="server" Text="Label" Visible="false"></asp:Label>
+    <asp:Label ID="lrid10" runat="server" Text="Label" Visible="false"></asp:Label>
+
+
 </asp:Content>

@@ -15,13 +15,13 @@ public partial class reporterReg2 : System.Web.UI.Page
         {
             TextBox1.Text = Session["email"].ToString();
             DataSet ds = new DataSet();
-            ds = Class1.select("select * from tbl_reporter where email = '" + TextBox1.Text + "'");
+            ds = Class1.select("select * from tbl_reporter where email = '" + TextBox1.Text.Trim().ToString() + "'");
             DataRow dr = ds.Tables[0].Rows[0];
             TextBox2.Text = dr["id"].ToString();
             string rid = "r_id" + TextBox2.Text;
             TextBox3.Text = rid;
             lrid.Text = TextBox3.Text;
-            string str = "update tbl_reporter set reporter_id = '" + TextBox3.Text + "' where email = '" + TextBox1.Text + "'";
+            string str = "update tbl_reporter set reporter_id = '" + TextBox3.Text.Trim().ToString() + "' where email = '" + TextBox1.Text.Trim().ToString() + "'";
             int img = Class1.update(str);
         }
         else

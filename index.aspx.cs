@@ -13,7 +13,7 @@ public partial class index : System.Web.UI.Page
         Session["title"] = "Home";
 
         DataSet ds = new DataSet();
-        ds = Class1.select("SELECT tbl_news.*, tbl_reporter.fname FROM tbl_news INNER JOIN tbl_reporter ON tbl_news.reporter_id = tbl_reporter.reporter_id where image1 != '" + null + "' AND isbreaking_news = 'YES'");
+        ds = Class1.select("SELECT tbl_news.*, tbl_reporter.fname FROM tbl_news INNER JOIN tbl_reporter ON tbl_news.reporter_id = tbl_reporter.reporter_id where image1 != '" + null + "' AND isbreaking_news = 'YES' order by id");
         int k;
         k = ds.Tables[0].Rows.Count;
         int v, v1;
@@ -31,6 +31,10 @@ public partial class index : System.Web.UI.Page
                 ldate1.Text = dr["date"].ToString();
                 lreporter1.Text = dr["fname"].ToString();
                 ldescription1.Text = dr["description"].ToString();
+                lnid1.Text = dr["id"].ToString();
+                lrid1.Text = dr["reporter_id"].ToString();
+                Session["news_id"] = lnid1.Text.Trim().ToString();
+                HyperLink1.NavigateUrl = "news_single.aspx";
             }
             else
             {
@@ -44,6 +48,10 @@ public partial class index : System.Web.UI.Page
                 ldate2.Text = dr1["date"].ToString();
                 lreporter2.Text = dr1["fname"].ToString();
                 ldescription2.Text = dr1["description"].ToString();
+                lnid2.Text = dr1["id"].ToString();
+                lrid2.Text = dr1["reporter_id"].ToString();
+                Session["news_id"] = lnid2.Text.Trim().ToString();
+                HyperLink2.NavigateUrl = "news_single.aspx";
             }
             else
             {
@@ -57,6 +65,10 @@ public partial class index : System.Web.UI.Page
                 ldate3.Text = dr2["date"].ToString();
                 lreporter3.Text = dr2["fname"].ToString();
                 ldescription3.Text = dr2["description"].ToString();
+                lnid3.Text = dr2["id"].ToString();
+                lrid3.Text = dr2["reporter_id"].ToString();
+                Session["news_id"] = lnid3.Text.Trim().ToString();
+                HyperLink3.NavigateUrl = "news_single.aspx";
             }
             else
             {
@@ -70,6 +82,10 @@ public partial class index : System.Web.UI.Page
                 ldate4.Text = dr3["date"].ToString();
                 lreporter4.Text = dr3["fname"].ToString();
                 ldescription4.Text = dr3["description"].ToString();
+                lnid4.Text = dr3["id"].ToString();
+                lrid4.Text = dr3["reporter_id"].ToString();
+                Session["news_id"] = lnid4.Text.Trim().ToString();
+                HyperLink4.NavigateUrl = "news_single.aspx";
             }
             else
             {
@@ -77,7 +93,7 @@ public partial class index : System.Web.UI.Page
             }
         }
         DataSet ds1 = new DataSet();
-        ds1 = Class1.select("SELECT tbl_news.*, tbl_reporter.fname FROM tbl_news INNER JOIN tbl_reporter ON tbl_news.reporter_id = tbl_reporter.reporter_id where image1 != '" + null + "' AND isbreaking_news = 'NO'");
+        ds1 = Class1.select("SELECT tbl_news.*, tbl_reporter.fname FROM tbl_news INNER JOIN tbl_reporter ON tbl_news.reporter_id = tbl_reporter.reporter_id where image1 != '" + null + "' AND isbreaking_news = 'NO' order by id");
         int k1;
         k1 = ds1.Tables[0].Rows.Count;
         int vv, vv1;
@@ -110,6 +126,8 @@ public partial class index : System.Web.UI.Page
                 ldate5.Text = dr4["date"].ToString();
                 lreporter5.Text = dr4["fname"].ToString();
                 ldescription5.Text = dr4["description"].ToString();
+                lnid5.Text = dr4["id"].ToString();
+                lrid5.Text = dr4["reporter_id"].ToString();
             }
             else
             {
@@ -121,10 +139,11 @@ public partial class index : System.Web.UI.Page
                 DataRow dr6 = ds1.Tables[0].Rows[i - 2];
                 ImageButton6.ImageUrl = dr6["image1"].ToString();
                 lheadline6.Text = dr6["headline"].ToString();
-                lreporter6.Text = dr6["reportername"].ToString();
+                lreporter6.Text = dr6["fname"].ToString();
                 ldate6.Text = dr6["date"].ToString();
                 ldescription6.Text = dr6["description"].ToString();
-                
+                lnid6.Text = dr6["id"].ToString();
+                lrid6.Text = dr6["reporter_id"].ToString();
             }
             else
             {
@@ -139,6 +158,8 @@ public partial class index : System.Web.UI.Page
                 lreporter7.Text = dr7["fname"].ToString();
                 ldate7.Text = dr7["date"].ToString();
                 ldescription7.Text = dr7["description"].ToString();
+                lnid7.Text = dr7["id"].ToString();
+                lrid7.Text = dr7["reporter_id"].ToString();
             }
             else
             {
@@ -153,6 +174,8 @@ public partial class index : System.Web.UI.Page
                 lreporter8.Text = dr8["fname"].ToString();
                 ldate8.Text = dr8["date"].ToString();
                 ldescription8.Text = dr8["description"].ToString();
+                lnid8.Text = dr8["id"].ToString();
+                lrid8.Text = dr8["reporter_id"].ToString();
             }
             else
             {
@@ -167,6 +190,8 @@ public partial class index : System.Web.UI.Page
                 lreporter9.Text = dr9["fname"].ToString();
                 ldate9.Text = dr9["date"].ToString();
                 ldescription9.Text = dr9["description"].ToString();
+                lnid9.Text = dr9["id"].ToString();
+                lrid9.Text = dr9["reporter_id"].ToString();
             }
             else
             {
@@ -181,6 +206,8 @@ public partial class index : System.Web.UI.Page
                 lreporter10.Text = dr10["fname"].ToString();
                 ldate10.Text = dr10["date"].ToString();
                 ldescription10.Text = dr10["description"].ToString();
+                lnid10.Text = dr10["id"].ToString();
+                lrid10.Text = dr10["reporter_id"].ToString();
             }
             else
             {
@@ -190,7 +217,7 @@ public partial class index : System.Web.UI.Page
         }
 
         DataSet ds2 = new DataSet();
-        ds2 = Class1.select("select * from tbl_news where image1 IS NULL AND isbreaking_news='YES'");
+        ds2 = Class1.select("select * from tbl_news where image1 IS NULL AND isbreaking_news='YES' order by id");
         int k2;
         k2 = ds2.Tables[0].Rows.Count;
         int v2, v12;
@@ -204,6 +231,7 @@ public partial class index : System.Web.UI.Page
             {
                 DataRow dr2 = ds2.Tables[0].Rows[j2 - 1];
                 lheadline11.Text = dr2["headline"].ToString();
+                lnid11.Text = dr2["id"].ToString();
             }
             else
             {
@@ -213,6 +241,7 @@ public partial class index : System.Web.UI.Page
             {
                 DataRow dr12 = ds2.Tables[0].Rows[j2 - 2];
                 lheadline12.Text = dr12["headline"].ToString();
+                lnid12.Text = dr12["id"].ToString();
             }
             else
             {
@@ -222,6 +251,7 @@ public partial class index : System.Web.UI.Page
             {
                 DataRow dr22 = ds2.Tables[0].Rows[j2 - 3];
                 lheadline13.Text = dr22["headline"].ToString();
+                lnid13.Text = dr22["id"].ToString();
             }
             else
             {
@@ -229,7 +259,7 @@ public partial class index : System.Web.UI.Page
             }
         }
         DataSet ds22 = new DataSet();
-        ds22 = Class1.select("select * from tbl_news where image1 IS NULL AND isbreaking_news='NO'");
+        ds22 = Class1.select("select * from tbl_news where image1 IS NULL AND isbreaking_news='NO' order by id");
         int k22;
         k22 = ds22.Tables[0].Rows.Count;
         int v22, v122;
@@ -243,6 +273,7 @@ public partial class index : System.Web.UI.Page
             {
                 DataRow dr22 = ds22.Tables[0].Rows[j22 - 1];
                 lheadline14.Text = dr22["headline"].ToString();
+                lnid14.Text = dr22["id"].ToString();
             }
             else
             {
@@ -252,6 +283,7 @@ public partial class index : System.Web.UI.Page
             {
                 DataRow dr122 = ds22.Tables[0].Rows[j22 - 2];
                 lheadline15.Text = dr122["headline"].ToString();
+                lnid15.Text = dr122["id"].ToString();
             }
             else
             {
@@ -261,6 +293,7 @@ public partial class index : System.Web.UI.Page
             {
                 DataRow dr222 = ds22.Tables[0].Rows[j22 - 3];
                 lheadline16.Text = dr222["headline"].ToString();
+                lnid16.Text = dr222["id"].ToString();
             }
             else
             {
@@ -278,74 +311,87 @@ public partial class index : System.Web.UI.Page
     }
     protected void lbheadline11_Click(object sender, EventArgs e)
     {
-        Response.Redirect(".aspx", true);
+        Session["news_id"] = lnid11.Text.Trim().ToString();
+        Response.Redirect("news_single_no_image.aspx", true);
     }
     protected void lbheadline12_Click(object sender, EventArgs e)
     {
-        Response.Redirect(".aspx", true);
+        Session["news_id"] = lnid12.Text.Trim().ToString();
+        Response.Redirect("news_single_no_image.aspx", true);
     }
     protected void lbheadline13_Click(object sender, EventArgs e)
     {
-        Response.Redirect(".aspx", true);
+        Session["news_id"] = lnid13.Text.Trim().ToString();
+        Response.Redirect("news_single_no_image.aspx", true);
     }
     protected void lbheadline14_Click(object sender, EventArgs e)
     {
-        Response.Redirect(".aspx", true);
+        Session["news_id"] = lnid14.Text.Trim().ToString();
+        Response.Redirect("news_single_no_image.aspx", true);
     }
     protected void lbheadline15_Click(object sender, EventArgs e)
     {
-        Response.Redirect(".aspx", true);
+        Session["news_id"] = lnid15.Text.Trim().ToString();
+        Response.Redirect("news_single_no_image.aspx", true);
     }
     protected void lbheadline16_Click(object sender, EventArgs e)
     {
-        Response.Redirect(".aspx", true);
+        Session["news_id"] = lnid16.Text.Trim().ToString();
+        Response.Redirect("news_single_no_image.aspx", true);
     }
-    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-    {
 
-    }
     protected void lbheading1_Click(object sender, EventArgs e)
     {
-
+        Session["news_id"] = lnid1.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
     }
     protected void lbreporter1_Click(object sender, EventArgs e)
     {
-
+        Session["r_id"] = lrid1.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
-    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-    {
-
-    }
+    
     protected void lbheading2_Click(object sender, EventArgs e)
     {
-
+        Session["news_id"] = lnid2.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
     }
     protected void lbreporter2_Click(object sender, EventArgs e)
     {
-
+        Session["r_id"] = lrid2.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
-    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
-    {
-
-    }
+    
     protected void lbheading3_Click(object sender, EventArgs e)
     {
-
+        Session["news_id"] = lnid3.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
     }
     protected void lbreporter3_Click(object sender, EventArgs e)
     {
-
+        Session["r_id"] = lrid3.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
-    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
-    {
-
-    }
+    
     protected void lbheading4_Click(object sender, EventArgs e)
     {
-
+        Session["news_id"] = lnid4.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
     }
     protected void lbreporter4_Click(object sender, EventArgs e)
     {
-
+        Session["r_id"] = lrid4.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
+    }
+    
+    protected void lbheading5_Click(object sender, EventArgs e)
+    {
+        Session["news_id"] = lnid5.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbreporter5_Click(object sender, EventArgs e)
+    {
+        Session["r_id"] = lrid5.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
 }
