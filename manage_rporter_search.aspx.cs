@@ -38,7 +38,7 @@ public partial class manage_rporter_search : System.Web.UI.Page
         string s1 = v.ToString();
         TextBox1.Text = s1;
         DataSet ds1 = new DataSet();
-        ds1 = Class1.select("select * from tbl_reporter where email= '" + Txsearch.Text + "' OR mobile= '" + Txsearch.Text + "' OR fname= '" + Txsearch.Text + "' OR approve= '" + Txsearch.Text + "' order by fname");
+        ds1 = Class1.select("select * from tbl_reporter where email= '" + Txsearch.Text + "' OR fname= '" + Txsearch.Text + "' OR approve= '" + Txsearch.Text + "' OR mobile= '" + Txsearch.Text + "' order by fname");
         int k;
         k = ds1.Tables[0].Rows.Count;
         if (ds1 != null && ds1.Tables[0].Rows.Count > 0)
