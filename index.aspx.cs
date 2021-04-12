@@ -421,4 +421,84 @@ public partial class index : System.Web.UI.Page
         Session["r_id"] = lrid5.Text.Trim().ToString();
         Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
+
+    protected void ImageButton6_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid6.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbheading6_Click(object sender, EventArgs e)
+    {
+        Session["news_id"] = lnid6.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbreporter6_Click(object sender, EventArgs e)
+    {
+        Session["r_id"] = lrid6.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
+    }
+
+    protected void ImageButton7_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid7.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbheading7_Click(object sender, EventArgs e)
+    {
+        Session["news_id"] = lnid7.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbreporter7_Click(object sender, EventArgs e)
+    {
+        Session["r_id"] = lrid7.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
+    }
+
+    protected void ImageButton8_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid8.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbheading8_Click(object sender, EventArgs e)
+    {
+        Session["news_id"] = lnid8.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbreporter8_Click(object sender, EventArgs e)
+    {
+        Session["r_id"] = lrid8.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
+    }
+
+    protected void ImageButton9_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid9.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbheading9_Click(object sender, EventArgs e)
+    {
+        Session["news_id"] = lnid9.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbreporter9_Click(object sender, EventArgs e)
+    {
+        Session["r_id"] = lrid9.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
+    }
+
+    protected void ImageButton10_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid10.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbheading10_Click(object sender, EventArgs e)
+    {
+        Session["news_id"] = lnid10.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
+    protected void lbreporter10_Click(object sender, EventArgs e)
+    {
+        Session["r_id"] = lrid10.Text.Trim().ToString();
+        Response.Redirect("reporter_profile_view_to_user.aspx", true);
+    }
 }

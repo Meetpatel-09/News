@@ -180,7 +180,7 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         
-                                            <asp:ImageButton ID="ImageButton6" AlternateText="Image" runat="server" CssClass="img-fluid" />
+                                            <asp:ImageButton ID="ImageButton6" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton6_Click" />
                                         
                                     </div><!-- end media -->
                                 </div><!-- end col -->
@@ -195,7 +195,7 @@
                                     <small>
                                         <asp:Label ID="ldate6" runat="server" Text="Label"></asp:Label>
                                     </small>
-                                    &nbsp;<small><asp:LinkButton ID="lbreporter6" runat="server">
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter6" runat="server" OnClick="lbreporter6_Click">
                                             <asp:Label ID="lreporter6" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </small>
@@ -208,7 +208,7 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         
-                                            <asp:ImageButton ID="ImageButton7" AlternateText="Image" runat="server" CssClass="img-fluid" />
+                                            <asp:ImageButton ID="ImageButton7" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton7_Click" />
                                         
                                     </div><!-- end media -->
                                 </div><!-- end col -->
@@ -223,7 +223,7 @@
                                     <small>
                                         <asp:Label ID="ldate7" runat="server" Text="Label"></asp:Label>
                                     </small>
-                                    &nbsp;<small><asp:LinkButton ID="lbreporter7" runat="server">
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter7" runat="server" OnClick="lbreporter7_Click">
                                             <asp:Label ID="lreporter7" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </small>
@@ -240,7 +240,7 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         
-                                            <asp:ImageButton ID="ImageButton8" AlternateText="Image" runat="server" CssClass="img-fluid" />
+                                            <asp:ImageButton ID="ImageButton8" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton8_Click" />
                                         
                                     </div><!-- end media -->
                                 </div><!-- end col -->
@@ -255,7 +255,7 @@
                                     <small>
                                         <asp:Label ID="ldate8" runat="server" Text="Label"></asp:Label>
                                     </small>
-                                    &nbsp;<small><asp:LinkButton ID="lbreporter8" runat="server">
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter8" runat="server" OnClick="lbreporter8_Click">
                                             <asp:Label ID="lreporter8" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </small>
@@ -268,7 +268,7 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                         
-                                            <asp:ImageButton ID="ImageButton9" AlternateText="Image" runat="server" CssClass="img-fluid" />
+                                            <asp:ImageButton ID="ImageButton9" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton9_Click" />
                                         
                                     </div><!-- end media -->
                                 </div><!-- end col -->
@@ -283,7 +283,7 @@
                                     <small>
                                         <asp:Label ID="ldate9" runat="server" Text="Label"></asp:Label>
                                     </small>
-                                    &nbsp;<small><asp:LinkButton ID="lbreporter9" runat="server">
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter9" runat="server" OnClick="lbreporter9_Click">
                                             <asp:Label ID="lreporter9" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </small>
@@ -296,7 +296,7 @@
                                 <div class="col-md-4">
                                     <div class="post-media">
                                        
-                                            <asp:ImageButton ID="ImageButton10" AlternateText="Image" runat="server" CssClass="img-fluid" />
+                                            <asp:ImageButton ID="ImageButton10" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton10_Click" />
                                        
                                     </div><!-- end media -->
                                 </div><!-- end col -->
@@ -311,7 +311,7 @@
                                     <small>
                                         <asp:Label ID="ldate10" runat="server" Text="Label"></asp:Label>
                                     </small>
-                                    &nbsp;<small><asp:LinkButton ID="lbreporter10" runat="server">
+                                    &nbsp;<small><asp:LinkButton ID="lbreporter10" runat="server" OnClick="lbreporter10_Click">
                                             <asp:Label ID="lreporter10" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </small>
