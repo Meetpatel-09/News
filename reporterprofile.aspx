@@ -313,7 +313,7 @@
             <td class="style9">
               <span class="style8">  Resume: </span></td>
             <td class="style2">
-                <asp:Button ID="btresume" runat="server" Text="View" onclick="btresume_Click" />
+                <asp:Button ID="btresume" runat="server" CssClass="btn btn-primary" Text="View" onclick="btresume_Click" />
             </td>
             <td class="style2">
                 &nbsp;</td>
@@ -341,7 +341,7 @@
                 &nbsp;</td>
             <td colspan="2">
                 <center>
-                    <asp:Button ID="btback" runat="server" Text="Back" onclick="btback_Click" /></center></td>
+                    <asp:Button ID="btback" runat="server" CssClass="btn btn-primary" Text="Back" onclick="btback_Click" /></center></td>
             <td class="style2">
                 &nbsp;</td>
             <td class="style2">

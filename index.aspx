@@ -19,12 +19,9 @@
                                 <asp:Panel ID="Panel1" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink1" runat="server">
-                                            <asp:ImageButton ID="ImageButton1" AlternateText="Image" runat="server" CssClass="img-fluid"/>
-                                            <div class="hovereffect">
-                                                <span></span>
-                                            </div><!-- end hover -->
-                                        </asp:HyperLink>
+                                         
+                                            <asp:ImageButton ID="ImageButton1" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton1_Click"/>
+                                       
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
                                         <h4>
@@ -50,12 +47,9 @@
                                 <asp:Panel ID="Panel3" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink3" runat="server">
-                                            <asp:ImageButton ID="ImageButton3" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect">
-                                                <span></span>
-                                            </div><!-- end hover -->
-                                       </asp:HyperLink>
+                                        
+                                            <asp:ImageButton ID="ImageButton3" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton3_Click" />
+                                        
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
                                         <h4>
@@ -86,12 +80,9 @@
                                 <asp:Panel ID="Panel2" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink2" runat="server">
-                                            <asp:ImageButton ID="ImageButton2" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect">
-                                                <span></span>
-                                            </div><!-- end hover -->
-                                        </asp:HyperLink>
+                                        
+                                            <asp:ImageButton ID="ImageButton2" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton2_Click" />
+                                        
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
                                         <h4>
@@ -116,12 +107,9 @@
                                 <asp:Panel ID="Panel4" runat="server">
                                 <div class="blog-box">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink4" runat="server">
-                                            <asp:ImageButton ID="ImageButton4" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect">
-                                                <span></span>
-                                            </div><!-- end hover -->
-                                        </asp:HyperLink>
+                                        
+                                            <asp:ImageButton ID="ImageButton4" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton4_Click" />
+                                         
                                     </div><!-- end media -->
                                     <div class="blog-meta big-meta">
                                         <h4>
@@ -163,10 +151,9 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink5" runat="server">
-                                            <asp:ImageButton ID="ImageButton5" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect"></div>
-                                        </asp:HyperLink>
+                                        
+                                            <asp:ImageButton ID="ImageButton5" AlternateText="Image" runat="server" CssClass="img-fluid" OnClick="ImageButton5_Click" />
+                                        
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -192,10 +179,9 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink6" runat="server">
+                                        
                                             <asp:ImageButton ID="ImageButton6" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect"></div>
-                                        </asp:HyperLink>
+                                        
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -221,10 +207,9 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink7" runat="server">
+                                        
                                             <asp:ImageButton ID="ImageButton7" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect"></div>
-                                        </asp:HyperLink>
+                                        
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -254,10 +239,9 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink8" runat="server">
+                                        
                                             <asp:ImageButton ID="ImageButton8" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect"></div>
-                                        </asp:HyperLink>
+                                        
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -283,10 +267,9 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink9" runat="server">
+                                        
                                             <asp:ImageButton ID="ImageButton9" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect"></div>
-                                        </asp:HyperLink>
+                                        
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
@@ -312,10 +295,9 @@
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <asp:HyperLink ID="HyperLink10" runat="server">
+                                       
                                             <asp:ImageButton ID="ImageButton10" AlternateText="Image" runat="server" CssClass="img-fluid" />
-                                            <div class="hovereffect"></div>
-                                        </asp:HyperLink>
+                                       
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 

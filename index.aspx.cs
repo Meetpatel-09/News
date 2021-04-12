@@ -33,8 +33,6 @@ public partial class index : System.Web.UI.Page
                 ldescription1.Text = dr["description"].ToString();
                 lnid1.Text = dr["id"].ToString();
                 lrid1.Text = dr["reporter_id"].ToString();
-                Session["news_id"] = lnid1.Text.Trim().ToString();
-                HyperLink1.NavigateUrl = "news_single.aspx";
             }
             else
             {
@@ -50,8 +48,6 @@ public partial class index : System.Web.UI.Page
                 ldescription2.Text = dr1["description"].ToString();
                 lnid2.Text = dr1["id"].ToString();
                 lrid2.Text = dr1["reporter_id"].ToString();
-                Session["news_id"] = lnid2.Text.Trim().ToString();
-                HyperLink2.NavigateUrl = "news_single.aspx";
             }
             else
             {
@@ -67,8 +63,6 @@ public partial class index : System.Web.UI.Page
                 ldescription3.Text = dr2["description"].ToString();
                 lnid3.Text = dr2["id"].ToString();
                 lrid3.Text = dr2["reporter_id"].ToString();
-                Session["news_id"] = lnid3.Text.Trim().ToString();
-                HyperLink3.NavigateUrl = "news_single.aspx";
             }
             else
             {
@@ -84,8 +78,6 @@ public partial class index : System.Web.UI.Page
                 ldescription4.Text = dr3["description"].ToString();
                 lnid4.Text = dr3["id"].ToString();
                 lrid4.Text = dr3["reporter_id"].ToString();
-                Session["news_id"] = lnid4.Text.Trim().ToString();
-                HyperLink4.NavigateUrl = "news_single.aspx";
             }
             else
             {
@@ -214,6 +206,15 @@ public partial class index : System.Web.UI.Page
                 Panel10.Visible = false;
                 bnext.Enabled = false;
             }
+            if ((i - 6) > 0)
+            {
+                bnext.Enabled = true;
+            }
+            else
+            {
+                
+                bnext.Enabled = false;
+            }
         }
 
         DataSet ds2 = new DataSet();
@@ -309,6 +310,7 @@ public partial class index : System.Web.UI.Page
     {
         Response.Redirect("news_showall.aspx", true);
     }
+
     protected void lbheadline11_Click(object sender, EventArgs e)
     {
         Session["news_id"] = lnid11.Text.Trim().ToString();
@@ -340,6 +342,11 @@ public partial class index : System.Web.UI.Page
         Response.Redirect("news_single_no_image.aspx", true);
     }
 
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid11.Text.Trim().ToString();
+        Response.Redirect("news_single_no_image.aspx", true);
+    }
     protected void lbheading1_Click(object sender, EventArgs e)
     {
         Session["news_id"] = lnid1.Text.Trim().ToString();
@@ -350,7 +357,12 @@ public partial class index : System.Web.UI.Page
         Session["r_id"] = lrid1.Text.Trim().ToString();
         Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
-    
+
+    protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid2.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
     protected void lbheading2_Click(object sender, EventArgs e)
     {
         Session["news_id"] = lnid2.Text.Trim().ToString();
@@ -361,7 +373,12 @@ public partial class index : System.Web.UI.Page
         Session["r_id"] = lrid2.Text.Trim().ToString();
         Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
-    
+
+    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid3.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
     protected void lbheading3_Click(object sender, EventArgs e)
     {
         Session["news_id"] = lnid3.Text.Trim().ToString();
@@ -372,7 +389,12 @@ public partial class index : System.Web.UI.Page
         Session["r_id"] = lrid3.Text.Trim().ToString();
         Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
-    
+
+    protected void ImageButton4_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid4.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
     protected void lbheading4_Click(object sender, EventArgs e)
     {
         Session["news_id"] = lnid4.Text.Trim().ToString();
@@ -383,7 +405,12 @@ public partial class index : System.Web.UI.Page
         Session["r_id"] = lrid4.Text.Trim().ToString();
         Response.Redirect("reporter_profile_view_to_user.aspx", true);
     }
-    
+
+    protected void ImageButton5_Click(object sender, ImageClickEventArgs e)
+    {
+        Session["news_id"] = lnid5.Text.Trim().ToString();
+        Response.Redirect("news_single.aspx", true);
+    }
     protected void lbheading5_Click(object sender, EventArgs e)
     {
         Session["news_id"] = lnid5.Text.Trim().ToString();
