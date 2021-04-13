@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 
-public partial class reporter : System.Web.UI.Page
+public partial class manage_reporter_single : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {

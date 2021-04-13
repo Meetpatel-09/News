@@ -392,11 +392,10 @@
             <td class="style1">
                 &nbsp;</td>
             <td class="style1">
-                <asp:Button ID="bt_back" runat="server" onclick="bt_back_Click" Text="Back" />
+                <asp:Button ID="bt_back" runat="server" onclick="bt_back_Click"  CssClass="btn btn-primary" Text="Back" />
             </td>
             <td class="style1">
-                <asp:Button ID="bt_del" runat="server" onclick="bt_del_Click" 
-                    Text="Delete Account" />
+                <asp:Button ID="bt_del" runat="server" onclick="bt_del_Click" CssClass="btn btn-primary" Text="Delete Account" />
             </td>
             <td class="style1">
                 &nbsp;</td>

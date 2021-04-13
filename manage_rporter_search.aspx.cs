@@ -315,8 +315,7 @@ public partial class manage_rporter_search : System.Web.UI.Page
     }
     protected void bt_approve1_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove1.Text == "YES")
+        if (lapprove1.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid1.Text + "'";
             int img1 = Class1.update(str1);
@@ -326,19 +325,12 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid1.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view1_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid1.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit1_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid1.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete1_Click(object sender, EventArgs e)
     {
@@ -348,8 +340,7 @@ public partial class manage_rporter_search : System.Web.UI.Page
     }
     protected void bt_approve2_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove2.Text == "YES")
+        if (lapprove2.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid2.Text + "'";
             int img1 = Class1.update(str1);
@@ -359,30 +350,22 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid2.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view2_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid2.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit2_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid2.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete2_Click(object sender, EventArgs e)
     {
         string str2 = "delete from tbl_reporter where reporter_id='" + rid2.Text + "'";
         int img2 = Class1.delete(str2);
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_approve3_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove3.Text == "YES")
+        if (lapprove3.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid3.Text + "'";
             int img1 = Class1.update(str1);
@@ -392,30 +375,22 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid3.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view3_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid3.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit3_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid3.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete3_Click(object sender, EventArgs e)
     {
         string str2 = "delete from tbl_reporter where reporter_id='" + rid3.Text + "'";
         int img2 = Class1.delete(str2);
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_approve4_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove4.Text == "YES")
+        if (lapprove4.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid4.Text + "'";
             int img1 = Class1.update(str1);
@@ -425,30 +400,22 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid4.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view4_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid4.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit4_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid4.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete4_Click(object sender, EventArgs e)
     {
         string str2 = "delete from tbl_reporter where reporter_id='" + rid4.Text + "'";
         int img2 = Class1.delete(str2);
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_approve5_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove5.Text == "YES")
+        if (lapprove5.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid5.Text + "'";
             int img1 = Class1.update(str1);
@@ -458,30 +425,22 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid5.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view5_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid5.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit5_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid5.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete5_Click(object sender, EventArgs e)
     {
         string str2 = "delete from tbl_reporter where reporter_id='" + rid5.Text + "'";
         int img2 = Class1.delete(str2);
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_approve6_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove6.Text == "YES")
+        if (lapprove6.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid6.Text + "'";
             int img1 = Class1.update(str1);
@@ -491,30 +450,22 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid6.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view6_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid6.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit6_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid6.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete6_Click(object sender, EventArgs e)
     {
         string str2 = "delete from tbl_reporter where reporter_id='" + rid6.Text + "'";
         int img2 = Class1.delete(str2);
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_approve7_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove7.Text == "YES")
+        if (lapprove7.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid7.Text + "'";
             int img1 = Class1.update(str1);
@@ -524,30 +475,22 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid7.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view7_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid7.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit7_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid7.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete7_Click(object sender, EventArgs e)
     {
         string str2 = "delete from tbl_reporter where reporter_id='" + rid7.Text + "'";
         int img2 = Class1.delete(str2);
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_approve8_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove8.Text == "YES")
+        if (lapprove8.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid8.Text + "'";
             int img1 = Class1.update(str1);
@@ -557,30 +500,22 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid8.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view8_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid8.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit8_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid8.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete8_Click(object sender, EventArgs e)
     {
         string str2 = "delete from tbl_reporter where reporter_id='" + rid8.Text + "'";
         int img2 = Class1.delete(str2);
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_approve9_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove9.Text == "YES")
+        if (lapprove9.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid9.Text + "'";
             int img1 = Class1.update(str1);
@@ -590,30 +525,22 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid9.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view9_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid9.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit9_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid9.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete9_Click(object sender, EventArgs e)
     {
         string str2 = "delete from tbl_reporter where reporter_id='" + rid9.Text + "'";
         int img2 = Class1.delete(str2);
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_approve10_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        if (lapprove10.Text == "YES")
+        if (lapprove10.Text.Trim() == "YES")
         {
             string str1 = "update tbl_reporter set approve = 'NO' where reporter_id = '" + rid10.Text + "'";
             int img1 = Class1.update(str1);
@@ -623,19 +550,12 @@ public partial class manage_rporter_search : System.Web.UI.Page
             string str1 = "update tbl_reporter set approve = 'YES' where reporter_id = '" + rid10.Text + "'";
             int img1 = Class1.update(str1);
         }
-        Response.Redirect("manage_rporter_search.aspx", true);
+        Response.Redirect("manage_reporter.aspx", true);
     }
     protected void bt_view10_Click(object sender, EventArgs e)
     {
-        Session["txsearch"] = Txsearch.Text.ToString();
         Session["rid"] = rid10.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
-    }
-    protected void bt_edit10_Click(object sender, EventArgs e)
-    {
-        Session["txsearch"] = Txsearch.Text.ToString();
-        Session["rid"] = rid10.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete10_Click(object sender, EventArgs e)
     {

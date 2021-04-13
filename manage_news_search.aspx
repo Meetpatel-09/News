@@ -14,13 +14,13 @@
                         <div class="card">
                         <div class="card-body">
 							
-                            <h4 class="card-title" align="center" style="margin-top: 15px;">Manage Reprter</h4>
+                            <h4 class="card-title" align="center" style="margin-top: 15px;">Manage News</h4>
                             
                             <div>
 								<table align="center">
 									<tr>
 										<td>
-                                            <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Search Reporter: "></asp:Label>
+                                            <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Search News: "></asp:Label>
 										</td>
 										<td>
                                             <asp:TextBox ID="TextBox2" runat="server"  CssClass="cform-control" style="width: 450px"></asp:TextBox>

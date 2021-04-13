@@ -329,7 +329,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view1_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid1.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete1_Click(object sender, EventArgs e)
     {
@@ -354,7 +354,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view2_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid2.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete2_Click(object sender, EventArgs e)
     {
@@ -379,7 +379,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view3_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid3.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete3_Click(object sender, EventArgs e)
     {
@@ -404,7 +404,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view4_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid4.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete4_Click(object sender, EventArgs e)
     {
@@ -429,7 +429,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view5_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid5.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete5_Click(object sender, EventArgs e)
     {
@@ -454,7 +454,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view6_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid6.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete6_Click(object sender, EventArgs e)
     {
@@ -479,7 +479,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view7_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid7.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete7_Click(object sender, EventArgs e)
     {
@@ -504,7 +504,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view8_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid8.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete8_Click(object sender, EventArgs e)
     {
@@ -529,7 +529,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view9_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid9.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete9_Click(object sender, EventArgs e)
     {
@@ -554,7 +554,7 @@ public partial class manage_reporter : System.Web.UI.Page
     protected void bt_view10_Click(object sender, EventArgs e)
     {
         Session["rid"] = rid10.Text.ToString();
-        Response.Redirect("manage_reporter_singe.aspx", true);
+        Response.Redirect("manage_reporter_single.aspx", true);
     }
     protected void bt_delete10_Click(object sender, EventArgs e)
     {

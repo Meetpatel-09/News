@@ -20,7 +20,7 @@
 								<table align="center">
 									<tr>
 										<td>
-                                            <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Search Reporter: "></asp:Label>
+                                            <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Search News: "></asp:Label>
 										</td>
 										<td>
                                             <asp:TextBox ID="TextBox2" runat="server" Width="450px"></asp:TextBox>
