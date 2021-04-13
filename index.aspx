@@ -187,7 +187,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading6" runat="server">
+                                        <asp:LinkButton ID="lbheading6" runat="server" OnClick="lbheading6_Click">
                                             <asp:Label ID="lheadline6" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -215,7 +215,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading7" runat="server">
+                                        <asp:LinkButton ID="lbheading7" runat="server" OnClick="lbheading7_Click">
                                             <asp:Label ID="lheadline7" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -247,7 +247,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading8" runat="server">
+                                        <asp:LinkButton ID="lbheading8" runat="server" OnClick="lbheading8_Click">
                                             <asp:Label ID="lheadline8" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -275,7 +275,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading9" runat="server">
+                                        <asp:LinkButton ID="lbheading9" runat="server" OnClick="lbheading9_Click">
                                             <asp:Label ID="lheadline9" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -303,7 +303,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading10" runat="server">
+                                        <asp:LinkButton ID="lbheading10" runat="server" OnClick="lbheading10_Click">
                                             <asp:Label ID="lheadline10" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>

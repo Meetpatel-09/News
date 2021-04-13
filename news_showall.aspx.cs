@@ -215,6 +215,48 @@ public partial class news_showall : System.Web.UI.Page
                 bnext.Enabled = false;
             }
         }
+        DataSet ds2 = new DataSet();
+        ds2 = Class1.select("select * from tbl_news where image1 IS NULL AND isbreaking_news='YES' order by id");
+        int k2;
+        k2 = ds2.Tables[0].Rows.Count;
+        int v2, v12;
+        v2 = k2;
+        v12 = k2 + 1;
+        string s12 = v2.ToString();
+        TextBox3.Text = s12;
+        for (int j2 = v2; j2 < v12; j2++)
+        {
+            if (j2 == v2 && j2 != 0)
+            {
+                DataRow dr2 = ds2.Tables[0].Rows[j2 - 1];
+                lheadline11.Text = dr2["headline"].ToString();
+                lnid11.Text = dr2["id"].ToString();
+            }
+            else
+            {
+                lbheadline11.Visible = false;
+            }
+            if ((j2 - 1) > 0)
+            {
+                DataRow dr12 = ds2.Tables[0].Rows[j2 - 2];
+                lheadline12.Text = dr12["headline"].ToString();
+                lnid12.Text = dr12["id"].ToString();
+            }
+            else
+            {
+                lbtheadline12.Visible = false;
+            }
+            if ((j2 - 2) > 0)
+            {
+                DataRow dr22 = ds2.Tables[0].Rows[j2 - 3];
+                lheadline13.Text = dr22["headline"].ToString();
+                lnid13.Text = dr22["id"].ToString();
+            }
+            else
+            {
+                lbtheadline13.Visible = false;
+            }
+        }
     }
     protected void bprevious_Click(object sender, EventArgs e)
     {

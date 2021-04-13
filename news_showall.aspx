@@ -7,7 +7,7 @@
 			<div style="padding: 10px"></div>
             <div class="container">
                 <div class="section-title">
-					<h3 class="color-aqua"><a>News&nbsp;</a></h3> <h4 style="margin-top: -47px; margin-left: 100px"> <marquee><asp:LinkButton ID="lbheadline11" runat="server" OnClick="lbheadline11_Click">•&nbsp;
+					<h3 class="color-aqua"><a>News&nbsp;</a></h3> <h4 style="margin-top: -47px; margin-left: 100px"><marquee><asp:LinkButton ID="lbheadline11" runat="server" OnClick="lbheadline11_Click">•&nbsp;
             <asp:Label ID="lheadline11" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbtheadline12" runat="server" OnClick="lbheadline12_Click">&nbsp;•&nbsp;
             <asp:Label ID="lheadline12" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbtheadline13" runat="server" OnClick="lbheadline13_Click">&nbsp;•&nbsp;
             <asp:Label ID="lheadline13" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton></marquee></h4> 
@@ -178,7 +178,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading6" runat="server">
+                                        <asp:LinkButton ID="lbheading6" runat="server" OnClick="lbheading6_Click">
                                             <asp:Label ID="lheadline6" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -206,7 +206,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading7" runat="server">
+                                        <asp:LinkButton ID="lbheading7" runat="server" OnClick="lbheading7_Click">
                                             <asp:Label ID="lheadline7" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -238,7 +238,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading8" runat="server">
+                                        <asp:LinkButton ID="lbheading8" runat="server" OnClick="lbheading8_Click">
                                             <asp:Label ID="lheadline8" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -266,7 +266,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading9" runat="server">
+                                        <asp:LinkButton ID="lbheading9" runat="server" OnClick="lbheading9_Click">
                                             <asp:Label ID="lheadline9" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -294,7 +294,7 @@
 
                                 <div class="blog-meta big-meta col-md-8">
                                     <h4>
-                                        <asp:LinkButton ID="lbheading10" runat="server">
+                                        <asp:LinkButton ID="lbheading10" runat="server" OnClick="lbheading10_Click">
                                             <asp:Label ID="lheadline10" runat="server" Text="Label"></asp:Label>
                                         </asp:LinkButton>
                                     </h4>
@@ -374,5 +374,6 @@
     <asp:Label ID="lrid8" runat="server" Text="Label" Visible="false"></asp:Label>
     <asp:Label ID="lrid9" runat="server" Text="Label" Visible="false"></asp:Label>
     <asp:Label ID="lrid10" runat="server" Text="Label" Visible="false"></asp:Label>
+
 </asp:Content>
 
