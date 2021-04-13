@@ -10,8 +10,10 @@
             </div>
         </div>
     </div>
-    <section class="section">
+    <section class="wd">
+        <div style="padding: 10px;"></div>
         <div class="container">
+             
             <div class="row">
 			    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 			    </div>
@@ -68,6 +70,7 @@
 			    </div>
             </div><!-- end row -->
         </div><!-- end container -->
+        <div style="padding: 10px;"></div>
     </section>
 
         <asp:TextBox ID="txchemail" runat="server" Visible="False"></asp:TextBox>

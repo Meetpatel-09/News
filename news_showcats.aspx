@@ -7,7 +7,8 @@
 			<div style="padding: 10px"></div>
             <div class="container">
                 <div class="section-title">
-					<h3 class="color-aqua"><a>News&nbsp;</a></h3> <h4 style="margin-top: -47px; margin-left: 100px"><marquee><asp:LinkButton ID="lbheadline11" runat="server" OnClick="lbheadline11_Click">•&nbsp;
+					<h3 class="color-aqua"><a>
+                        <asp:Label ID="lcat" runat="server" Text="Label"></asp:Label>&nbsp;</a></h3> <h4 style="margin-top: -47px; margin-left: 100px"><marquee><asp:LinkButton ID="lbheadline11" runat="server" OnClick="lbheadline11_Click">•&nbsp;
             <asp:Label ID="lheadline11" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbtheadline12" runat="server" OnClick="lbheadline12_Click">&nbsp;•&nbsp;
             <asp:Label ID="lheadline12" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton><asp:LinkButton ID="lbtheadline13" runat="server" OnClick="lbheadline13_Click">&nbsp;•&nbsp;
             <asp:Label ID="lheadline13" runat="server" Text="Label" Font-Size="20px"></asp:Label></asp:LinkButton></marquee></h4> 
