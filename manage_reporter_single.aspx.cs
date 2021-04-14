@@ -33,7 +33,7 @@ public partial class manage_reporter_single : System.Web.UI.Page
                         DataRow dr = ds.Tables[0].Rows[i];
                         Image1.ImageUrl = dr["photo"].ToString();
                         txfname.Text = dr["fname"].ToString();
-                        DropDownList1.Text = dr["gender"].ToString();
+                        DropDownList1.SelectedItem.Text = dr["gender"].ToString();
                         txemail.Text = dr["email"].ToString();
                         txaddress.Text = dr["address"].ToString();
                         txmoblie.Text = dr["mobile"].ToString();

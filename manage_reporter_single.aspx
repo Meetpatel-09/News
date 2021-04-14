@@ -237,7 +237,7 @@
             <td class="auto-style1">
                 &nbsp;</td>
             <td colspan="2" rowspan="2">
-                <asp:TextBox ID="txaddress" runat="server" Height="23px" Width="400px"></asp:TextBox>
+                <asp:TextBox ID="txaddress" runat="server" Height="30px" Width="400px"></asp:TextBox>
             </td>
             <td class="style1">
                 &nbsp;</td>
@@ -251,7 +251,7 @@
                 </td>
             <td class="style1">
                 <asp:Button ID="btsaveaddress" runat="server" Text="Save" Visible="False" 
-                    onclick="btsaveaddress_Click" />
+                    onclick="btsaveaddress_Click" CssClass="btn btn-primary" />
             </td>
             <td class="style1">
                 </td>
@@ -316,9 +316,9 @@
             </td>
             <td class="style1">
                 <asp:Button ID="btsaveemail" runat="server" Text="Save" Visible="False" 
-                    onclick="btsaveemail_Click" />
+                    onclick="btsaveemail_Click" CssClass="btn btn-primary" />
                 <asp:Button ID="btsavepass" runat="server" onclick="btsavepass_Click" Text="Save" 
-                    Visible="False" />
+                    Visible="False" CssClass="btn btn-primary" />
             </td>
             <td class="style1">
                 </td>
@@ -379,7 +379,7 @@
             </td>
             <td class="auto-style2">
                 <asp:Button ID="mobile" runat="server" Text="Save" Visible="False" 
-                    onclick="mobile_Click" />
+                    onclick="mobile_Click" CssClass="btn btn-primary" />
             </td>
             <td class="style1">
                 &nbsp;</td>
@@ -399,6 +399,36 @@
                 </td>
             <td class="style1">
                 </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                </td>
+            <td class="auto-style1">
+                </td>
+            <td class="style1">
+                <span style="color: rgb(33, 33, 33); font-family: Roboto, Arial, sans-serif; font-size: large; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+                View Resume</span></td>
+            <td class="auto-style2">
+                <asp:Button ID="btViewResume" runat="server" OnClick="btUploadResumer_Click" Text="View" CssClass="btn btn-primary" />
+                </td>
+            <td class="style1">
+                </td>
+            <td class="style1">
+                </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;</td>
+            <td class="auto-style1">
+                &nbsp;</td>
+            <td class="style1">
+                &nbsp;</td>
+            <td class="auto-style2">
+                &nbsp;</td>
+            <td class="style1">
+                &nbsp;</td>
+            <td class="style1">
+                &nbsp;</td>
         </tr>
         <tr>
             <td class="style1">
