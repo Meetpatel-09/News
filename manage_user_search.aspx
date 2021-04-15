@@ -20,7 +20,7 @@
 								<table align="center">
 									<tr>
 										<td>
-                                            <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Search Reporter: "></asp:Label>
+                                            <asp:Label ID="lctext" runat="server" Font-Size="Large" Text="Search User: "></asp:Label>
 										</td>
 										<td>
                                             <asp:TextBox ID="Txsearch" runat="server"  CssClass="cform-control" style="width: 450px" placeholder="Full Name, Email or Mobile Number"></asp:TextBox>
