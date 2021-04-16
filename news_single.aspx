@@ -9,7 +9,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-title-area">
-                                <h3 >
+                                <h3>
                                     <asp:Label ID="lheading" runat="server" Text="Label"></asp:Label>
                                 </h3>
                             </div>
