@@ -29,24 +29,33 @@ public partial class news_single : System.Web.UI.Page
                 lfulldescription.Text = dr["fulldescription"].ToString();
                 // lcat.Text = dr["cat_id"].ToString();
                 lrid.Text = dr["reporter_id"].ToString();
-                if (dr["image2"].ToString() == null)
+                if (dr["image2"].ToString() == "")
                 {
-                    Image2.Visible = false;
+                    Panel1.Visible = true;
                     Panel2.Visible = false;
-                    Panel1.Visible = false;
-                }
-                else
-                {
-                    Image2.ImageUrl = dr["image2"].ToString();
-                }
-                if (dr["image3"].ToString() == null)
-                {
-                    Image3.Visible = false;
                     Panel3.Visible = false;
+                    Image1.ImageUrl = dr["image1"].ToString();
+                }
+                else if (dr["image2"].ToString() != "" && dr["image3"].ToString() == "")
+                {
+                    Panel1.Visible = false;
+                    Panel2.Visible = true;
+                    Panel3.Visible = false;
+                    Image21.ImageUrl = dr["image1"].ToString();
+                    Image22.ImageUrl = dr["image2"].ToString();
+                }
+                else if(dr["image3"].ToString() != "")
+                {
+                    Panel1.Visible = false;
+                    Panel2.Visible = false;
+                    Panel3.Visible = true;
+                    Image31.ImageUrl = dr["image1"].ToString();
+                    Image32.ImageUrl = dr["image2"].ToString();
+                    Image33.ImageUrl = dr["image3"].ToString();
                 }
                 else
                 {
-                    Image3.ImageUrl = dr["image3"].ToString();
+
                 }
             }
         }
