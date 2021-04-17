@@ -260,7 +260,7 @@ public partial class index : System.Web.UI.Page
             }
         }
         DataSet ds22 = new DataSet();
-        ds22 = Class1.select("select * from tbl_news where image1 IS NULL order by id");
+        ds22 = Class1.select("select * from tbl_news where image1 IS NULL AND isbreaking_news='NO' order by id");
         int k22;
         k22 = ds22.Tables[0].Rows.Count;
         int v22, v122;
