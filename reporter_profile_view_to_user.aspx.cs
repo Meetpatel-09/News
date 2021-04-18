@@ -24,7 +24,7 @@ public partial class reporter_profile_view_to_user : System.Web.UI.Page
                 lemail.Text = dr["email"].ToString();
                 DataSet ds1 = new DataSet();
                 ds1 = Class1.select("select * from tbl_news where reporter_id = '" + lrid.Text + "'");
-                int k = ds.Tables[0].Rows.Count;
+                int k = ds1.Tables[0].Rows.Count;
                 ltnews.Text = k.ToString();
             }
         }

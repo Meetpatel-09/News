@@ -46,7 +46,7 @@
         {
             text-decoration: underline;
         }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="w-100">
@@ -109,7 +109,6 @@
             <td class="style4" colspan="2">
                 <span class="style8">Name</span>: 
                 <asp:Label ID="lfname" runat="server"></asp:Label>
-&nbsp;<asp:Label ID="llname" runat="server"></asp:Label>
             </td>
             <td class="style2">
             </td>
@@ -132,7 +131,7 @@
             <td class="style2">
                 &nbsp;</td>
             <td class="style4" colspan="2">
-                <span class="style10">Total News Posted:</span>
+                <span class="style8">Total News Posted:</span>
                 <asp:Label ID="ltnews" runat="server"></asp:Label>
             </td>
             <td class="style2">
@@ -152,24 +151,23 @@
         </tr>
         <tr>
             <td class="style2">
-                &nbsp;</td>
+                </td>
             <td class="style2">
-                &nbsp;</td>
+                </td>
             <td class="style2">
-                &nbsp;</td>
+                </td>
             <td class="style2">
-                &nbsp;</td>
+                </td>
             <td class="style2">
-                &nbsp;</td>
+                </td>
         </tr>
         <tr>
             <td class="style2">
                 &nbsp;</td>
             <td class="style2">
                 &nbsp;</td>
-            <td class="style7">
-                Email:</td>
-            <td class="style2">
+            <td class="style4" colspan="2">
+                <span class="style8">Email</span>:
                 <asp:Label ID="lemail" runat="server"></asp:Label>
             </td>
             <td class="style2">
