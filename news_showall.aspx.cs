@@ -15,16 +15,36 @@ public partial class news_showall : System.Web.UI.Page
         ds = Class1.select("SELECT tbl_news.*, tbl_reporter.fname FROM tbl_news INNER JOIN tbl_reporter ON tbl_news.reporter_id = tbl_reporter.reporter_id where image1 != '" + null + "' AND isbreaking_news = 'YES' order by id");
         int k;
         k = ds.Tables[0].Rows.Count;
-        int v, v1;
-        v = k;
-        v1 = k + 1;
-        string s1 = v.ToString();
-        TextBox1.Text = s1;
-        for (int j = v; j < v1; j++)
+        if (Session["pre"] != null)
         {
-            if (j == v && j != 0)
+            Session.Remove("pre");
+        }
+        int v, v1;
+        if (Session["v3v"] != null)
+        {
+            TextBox2.Text = Session["v3v"].ToString();
+            string ss4 = TextBox2.Text;
+            int vv4 = Convert.ToInt32(ss4);
+            v = vv4;
+            v1 = v + 1;
+        }
+        else
+        {
+            v = k;
+            v1 = k + 1;
+        }
+        string s1 = v.ToString();
+        TextBox2.Text = s1;
+        for (int i = v; i < v1; i++)
+        {
+            if (i == k)
             {
-                DataRow dr = ds.Tables[0].Rows[j - 1];
+                Session["pre"] = TextBox3.Text;
+                //bprevious.Enabled = false;
+            }
+            if (i == v && i != 0)
+            {
+                DataRow dr = ds.Tables[0].Rows[i - 1];
                 ImageButton1.ImageUrl = dr["image1"].ToString();
                 lheadline1.Text = dr["headline"].ToString();
                 ldate1.Text = dr["date"].ToString();
@@ -37,9 +57,9 @@ public partial class news_showall : System.Web.UI.Page
             {
                 Panel1.Visible = false;
             }
-            if ((j - 1) > 0)
+            if ((i - 1) > 0)
             {
-                DataRow dr1 = ds.Tables[0].Rows[j - 2];
+                DataRow dr1 = ds.Tables[0].Rows[i - 2];
                 ImageButton2.ImageUrl = dr1["image1"].ToString();
                 lheadline2.Text = dr1["headline"].ToString();
                 ldate2.Text = dr1["date"].ToString();
@@ -52,9 +72,9 @@ public partial class news_showall : System.Web.UI.Page
             {
                 Panel2.Visible = false;
             }
-            if ((j - 2) > 0)
+            if ((i - 2) > 0)
             {
-                DataRow dr2 = ds.Tables[0].Rows[j - 3];
+                DataRow dr2 = ds.Tables[0].Rows[i - 3];
                 ImageButton3.ImageUrl = dr2["image1"].ToString();
                 lheadline3.Text = dr2["headline"].ToString();
                 ldate3.Text = dr2["date"].ToString();
@@ -67,9 +87,9 @@ public partial class news_showall : System.Web.UI.Page
             {
                 Panel3.Visible = false;
             }
-            if ((j - 3) > 0)
+            if ((i - 3) > 0)
             {
-                DataRow dr3 = ds.Tables[0].Rows[j - 4];
+                DataRow dr3 = ds.Tables[0].Rows[i- 4];
                 ImageButton4.ImageUrl = dr3["image1"].ToString();
                 lheadline4.Text = dr3["headline"].ToString();
                 ldate4.Text = dr3["date"].ToString();
@@ -260,10 +280,29 @@ public partial class news_showall : System.Web.UI.Page
     }
     protected void bprevious_Click(object sender, EventArgs e)
     {
-
+        if (Session["pre"] != null)
+        {
+            Response.Redirect("index.aspx", true);
+        }
+        else
+        {
+            string ss2 = TextBox2.Text;
+            int vv3 = Convert.ToInt32(ss2);
+            vv3 = vv3 + 4;
+            string ss3 = vv3.ToString();
+            TextBox2.Text = ss3;
+            Session["v3v"] = TextBox2.Text.ToString();
+            Response.Redirect("news_showall.aspx", true);
+        }
     }
     protected void bnext_Click(object sender, EventArgs e)
     {
+        string ss2 = TextBox2.Text;
+        int vv3 = Convert.ToInt32(ss2);
+        vv3 = vv3 - 4;
+        string ss3 = vv3.ToString();
+        TextBox2.Text = ss3;
+        Session["v3v"] = TextBox2.Text.ToString();
         Response.Redirect("news_showall.aspx", true);
     }
 
